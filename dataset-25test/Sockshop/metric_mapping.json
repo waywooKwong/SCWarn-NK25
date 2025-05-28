@@ -1,0 +1,13 @@
+{
+  "timestamp": "envoy_server_uptime",
+  "ops": "envoy_cluster_upstream_rq_total",
+  "success_rate": {
+    "completed": "envoy_cluster_upstream_rq_completed",
+    "total": "envoy_cluster_upstream_rq_total"
+  },
+  "duration": "envoy_cluster_upstream_cx_length_ms_sum",
+  "cpu": "istio_agent_process_cpu_seconds_total",
+  "memory": "istio_agent_process_resident_memory_bytes",
+  "receive": "istio_agent_process_network_receive_bytes_total",
+  "transmit": "istio_agent_process_network_transmit_bytes_total"
+}
