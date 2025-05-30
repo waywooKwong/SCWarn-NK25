@@ -1,0 +1,19 @@
+# Chaos Mesh Pod Kill 实验配置
+# 用于在30分钟内随机杀死robot-shop命名空间下的2个以上pods
+apiVersion: chaos-mesh.org/v1alpha1
+kind: PodChaos
+metadata:
+  name: robot-shop-pod-kill
+  namespace: chaos-testing
+spec:
+  action: pod-kill
+  mode: all
+  selector:
+    namespaces:
+      - robot-shop
+    # 选择所有服务的pods（排除数据库等关键组件）
+    labelSelectors:
+      "app.kubernetes.io/name": "robot-shop"
+  scheduler:
+    cron: "@every 3m" # 每3分钟执行一次
+  duration: "30m" # 总持续时间30分钟
