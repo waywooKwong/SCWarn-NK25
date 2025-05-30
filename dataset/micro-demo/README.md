@@ -9,7 +9,10 @@
 - payment-service：支付服务（依赖 order）
 
 ## 快速部署
-
+0. 进入 micro-demo 目录
+   ```
+   cd dataset/micro-demo
+   ```
 1. 启动 minikube 并启用 istio-injection：
    ```bash
    minikube start
@@ -46,14 +49,14 @@
    cd ../payment-service
    kubectl apply -f k8s.yaml -n micro-demo
    ```
-4. 将本地 Docker 的镜像加载到 Minikube 中（待优化，部署文件是不是可以直接部署到 minikube 中）
-```
+5. 将本地 Docker 的镜像加载到 Minikube 中（待优化，部署文件是不是可以直接部署到 minikube 中）
+   ```
    minikube image load cart-service:latest
    minikube image load order-service:latest
    minikube image load payment-service:latest
    minikube image load product-service:latest
-```
-5. 检查服务状态
+   ```
+6. 检查服务状态
    ```bash
    kubectl get pods -n micro-demo
    kubectl get svc -n micro-demo
@@ -67,7 +70,7 @@
 ## 目录结构
 
 ```
-my_micro/
+micro-demo/
 ├── user-service/
 ├── product-service/
 ├── order-service/
