@@ -25,41 +25,43 @@
    ```
 3. 构建 Dcoker 镜像：
    ```bash
-   cd user-service
-   docker build -t user-service:latest .
-   cd ../product-service
-   docker build -t product-service:latest .
-   cd ../order-service
-   docker build -t order-service:latest .
-   cd ../cart-service
-   docker build -t cart-service:latest .
-   cd ../payment-service
-   docker build -t payment-service:latest .
+   docker build -t user-service:latest ./user-service
+   docker build -t product-service:latest ./product-service
+   docker build -t order-service:latest ./order-service
+   docker build -t cart-service:latest ./cart-service
+   docker build -t payment-service:latest ./payment-service
+   docker build -t front-end:latest ./front-end
    ```
 4. 部署到 Kubernetes
    ```bash
-   cd user-service
-   kubectl apply -f k8s.yaml -n micro-demo
-   cd ../product-service
-   kubectl apply -f k8s.yaml -n micro-demo
-   cd ../order-service
-   kubectl apply -f k8s.yaml -n micro-demo
-   cd ../cart-service
-   kubectl apply -f k8s.yaml -n micro-demo
-   cd ../payment-service
-   kubectl apply -f k8s.yaml -n micro-demo
+   kubectl apply -f user-service/k8s.yaml -n micro-demo
+   kubectl apply -f product-service/k8s.yaml -n micro-demo
+   kubectl apply -f order-service/k8s.yaml -n micro-demo
+   kubectl apply -f cart-service/k8s.yaml -n micro-demo
+   kubectl apply -f payment-service/k8s.yaml -n micro-demo
+   kubectl apply -f front-end/k8s.yaml -n micro-demo
    ```
 5. 将本地 Docker 的镜像加载到 Minikube 中（待优化，部署文件是不是可以直接部署到 minikube 中）
-   ```
-   minikube image load cart-service:latest
-   minikube image load order-service:latest
-   minikube image load payment-service:latest
+   ```bash
+   minikube image load user-service:latest
    minikube image load product-service:latest
+   minikube image load order-service:latest
+   minikube image load cart-service:latest
+   minikube image load payment-service:latest
+   minikube image load front-end:latest
    ```
 6. 检查服务状态
    ```bash
    kubectl get pods -n micro-demo
    kubectl get svc -n micro-demo
+   ```
+7. 查看前端 front-end
+   ```bash
+   minikube service front-end -n micro-demo
+   ```
+（可选）删除现有部署和服务
+   ```bash
+   kubectl delete deployment,service -n micro-demo --all
    ```
 
 ## Istio 监控
@@ -76,5 +78,6 @@ micro-demo/
 ├── order-service/
 ├── cart-service/
 ├── payment-service/
+├── front-end/
 └── README.md
 ``` 
