@@ -1,6 +1,8 @@
-train_path: "data/sample/train.csv"
-test_path: "data/sample/abnormal.csv"
-output_path: "result/sample.csv"
+dataset_name: "sock-shop"
+
+train_path: "./data/sock-shop/train/"
+test_path: "./data/hotel-res/abnormal/"
+output_path: "./data/hotel-res/normal/"
 
 scaler: 'standard'
 
@@ -44,7 +46,7 @@ algorithms:
       seq_len: 10
       modal:
         - 4 
-        - 3
+        - 4
 
   MMAE:
       epoch: 10
@@ -53,4 +55,4 @@ algorithms:
       seq_len: 15
       modal:
         - 4
-        - 3
+        - 4

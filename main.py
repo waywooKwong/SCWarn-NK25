@@ -46,6 +46,9 @@ def use_minmax_scale(df_data: pd.DataFrame):
 def use_standard_scale(df_data: pd.DataFrame):
     df_data = df_data.copy()
     scaler = StandardScaler()
+
+    df_data = df_data.astype(float)
+    
     df_data.loc[:, :] = scaler.fit_transform(df_data)
     return  df_data
 
@@ -102,6 +105,8 @@ def run_gru(train_data: np.ndarray, test_data: np.ndarray, params):
 
 
 def run_mlstm(train_data: np.ndarray, test_data: np.ndarray, params):
+    print(f"params: {params}")
+    # print(f"model_path: {params['modal']}")
     if 'model_path' in params:
         model = torch.load(params['model_path'])
     else:
@@ -208,33 +213,50 @@ def test_case(df_train: pd.DataFrame, df_test: pd.DataFrame):
     return df
 
 
+def get_csv_files_in_folder(folder_path):
+    # 获取文件夹中的所有文件，筛选出以 .csv 结尾的文件
+    return [f for f in os.listdir(folder_path) if f.endswith('.csv')]
+
+
+
+
+
+
 if __name__ == '__main__':
-    # load training data
-    os.makedirs("model", exist_ok=True)
-    df_train = load_data(config['train_path'])
+    cases=get_csv_files_in_folder(config.get('train_path'))
 
-    # train and test
-    if 'test_path' in config:
-        multi_cases = True if os.path.isdir(config['test_path']) else False
+    for case in cases:
+        print(f"process {case} ing")
+        config['train_path'] = f"data/{config.get('dataset_name')}/train/{case}"
+        config['test_path'] = f"data/{config.get('dataset_name')}/abnormal/{case}"
+        config['output_path'] = f"reslut/{config.get('dataset_name')}/{case}"
 
-        if not multi_cases:
-            df_test = load_data(config['test_path'])
-            df = test_case(df_train, df_test)
+        # load training data
+        os.makedirs("model", exist_ok=True)
+        df_train = load_data(config['train_path'])
 
+        # train and test
+        if 'test_path' in config:
+            multi_cases = True if os.path.isdir(config['test_path']) else False
+
+            if not multi_cases:
+                df_test = load_data(config['test_path'])
+                df = test_case(df_train, df_test)
+
+            else:
+                test_info_ls = [(load_data(os.path.join(config['test_path'], i)), i)
+                                for i in os.listdir(config['test_path']) if i.endswith(".csv")]
+                result_ls = []
+                for df_test, case_name in test_info_ls:
+                    tmp_df = test_case(df_train, df_test)
+                    tmp_df['case'] = case_name[:-4]
+                    result_ls.append(tmp_df)
+                df = pd.concat(result_ls)
+
+            os.makedirs(os.path.dirname(config['output_path']), exist_ok=True)
+            df.to_csv(config['output_path'])
+
+        # barely train
         else:
-            test_info_ls = [(load_data(os.path.join(config['test_path'], i)), i)
-                            for i in os.listdir(config['test_path']) if i.endswith(".csv")]
-            result_ls = []
-            for df_test, case_name in test_info_ls:
-                tmp_df = test_case(df_train, df_test)
-                tmp_df['case'] = case_name[:-4]
-                result_ls.append(tmp_df)
-            df = pd.concat(result_ls)
-
-        os.makedirs(os.path.dirname(config['output_path']), exist_ok=True)
-        df.to_csv(config['output_path'])
-
-    # barely train
-    else:
-        for algorithm in config['algorithms']:
-            train_model(algorithm, df_train.to_numpy(), config['algorithms'][algorithm])
+            for algorithm in config['algorithms']:
+                train_model(algorithm, df_train.to_numpy(), config['algorithms'][algorithm])
