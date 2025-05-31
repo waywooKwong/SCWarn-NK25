@@ -1,0 +1,269 @@
+# Chaos Mesh Workflow 实验配置 - Online Boutique
+# 在1小时内随机杀死多个服务pods，每个pod的杀死持续时间较长
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: online-boutique-intensive-pod-kill
+  namespace: chaos-testing
+spec:
+  entry: entry
+  templates:
+    - name: entry
+      templateType: Serial
+      deadline: 60m # 持续1小时
+      children:
+        - kill-phase-1
+        - kill-phase-2
+        - kill-phase-3
+        - kill-phase-4
+        - kill-phase-5
+        - kill-phase-6
+        - kill-phase-7
+        - kill-phase-8
+
+    # 第一阶段：杀死frontend和productcatalogservice (8分钟)
+    - name: kill-phase-1
+      templateType: Parallel
+      deadline: 8m
+      children:
+        - kill-frontend
+        - kill-productcatalog
+
+    - name: kill-frontend
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: frontend
+
+    - name: kill-productcatalog
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: productcatalogservice
+
+    # 第二阶段：杀死cartservice、checkoutservice和paymentservice (10分钟)
+    - name: kill-phase-2
+      templateType: Parallel
+      deadline: 10m
+      children:
+        - kill-cart
+        - kill-checkout
+        - kill-payment
+
+    - name: kill-cart
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: cartservice
+
+    - name: kill-checkout
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: checkoutservice
+
+    - name: kill-payment
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: paymentservice
+
+    # 第三阶段：随机杀死推荐和广告服务 (7分钟)
+    - name: kill-phase-3
+      templateType: PodChaos
+      deadline: 7m
+      podChaos:
+        action: pod-kill
+        mode: random-max-percent
+        value: "100" # 杀死所有匹配的pods
+        selector:
+          namespaces:
+            - online-boutique
+          expressionSelectors:
+            - key: app
+              operator: In
+              values:
+                - recommendationservice
+                - adservice
+
+    # 第四阶段：杀死currencyservice和shippingservice (9分钟)
+    - name: kill-phase-4
+      templateType: Parallel
+      deadline: 9m
+      children:
+        - kill-currency
+        - kill-shipping
+
+    - name: kill-currency
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: currencyservice
+
+    - name: kill-shipping
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: shippingservice
+
+    # 第五阶段：杀死emailservice和redis-cart (6分钟)
+    - name: kill-phase-5
+      templateType: Parallel
+      deadline: 6m
+      children:
+        - kill-email
+        - kill-redis
+
+    - name: kill-email
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: emailservice
+
+    - name: kill-redis
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: redis-cart
+
+    # 第六阶段：再次杀死关键服务 (8分钟)
+    - name: kill-phase-6
+      templateType: Parallel
+      deadline: 8m
+      children:
+        - kill-frontend-2
+        - kill-cart-2
+        - kill-checkout-2
+
+    - name: kill-frontend-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: frontend
+
+    - name: kill-cart-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: cartservice
+
+    - name: kill-checkout-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: checkoutservice
+
+    # 第七阶段：随机杀死50%的所有服务 (7分钟)
+    - name: kill-phase-7
+      templateType: PodChaos
+      deadline: 7m
+      podChaos:
+        action: pod-kill
+        mode: random-max-percent
+        value: "50"
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors: {} # 选择所有pods
+
+    # 第八阶段：最后一轮杀死多个服务 (5分钟)
+    - name: kill-phase-8
+      templateType: Parallel
+      deadline: 5m
+      children:
+        - kill-payment-2
+        - kill-productcatalog-2
+        - kill-recommendation-2
+
+    - name: kill-payment-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: paymentservice
+
+    - name: kill-productcatalog-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: productcatalogservice
+
+    - name: kill-recommendation-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - online-boutique
+          labelSelectors:
+            app: recommendationservice

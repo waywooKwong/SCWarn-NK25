@@ -6,13 +6,13 @@ from datetime import datetime, timedelta
 
 # 配置信息
 PROMETHEUS_URL = "http://127.0.0.1:8080"
-NAMESPACE = "robot-shop"
+NAMESPACE = "online-boutique"
 SERVICE_COUNT = 12  # 服务总数，用于计算成功率
 
 # 构建正确的输出目录路径
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(script_dir))  # 回到项目根目录
-OUTPUT_DIR = os.path.join(project_root, "data", "robot-shop", "normal")
+OUTPUT_DIR = os.path.join(project_root, "data", "online-boutique", "train")
 
 # 加载指标映射
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -23,15 +23,15 @@ with open(metric_mapping_path, "r", encoding='utf-8') as f:
 def get_all_services():
     """获取所有微服务名称"""
     print("[*] 获取所有微服务名称...")
-    resp = requests.get(f"{PROMETHEUS_URL}/api/v1/label/service/values")
+    resp = requests.get(f"{PROMETHEUS_URL}/api/v1/label/app/values")
     if resp.status_code != 200:
         raise Exception("获取服务列表失败")
     
     services = resp.json()["data"]
-    # 过滤出robot-shop命名空间下的服务
+    # 过滤出online-boutique命名空间下的服务
     filtered_services = []
     for service in services:
-        query = f'{{namespace="{NAMESPACE}",service="{service}"}}'
+        query = f'{{namespace="{NAMESPACE}",app="{service}"}}'
         resp = requests.get(f"{PROMETHEUS_URL}/api/v1/series?match[]={query}")
         if resp.status_code == 200 and resp.json()["data"]:
             filtered_services.append(service)
@@ -42,7 +42,7 @@ def collect_metrics_for_service(service_name):
     """收集指定服务的所有指标数据"""
     end = datetime.utcnow()
     start = end - timedelta(hours=5)
-    step = "5s"
+    step = "2s"
     
     timestamps = set()
     metric_data = {}
@@ -53,7 +53,7 @@ def collect_metrics_for_service(service_name):
         if metric_key == "timestamp":
             continue
             
-        query = f'{metric_name}{{namespace="{NAMESPACE}",service="{service_name}"}}'
+        query = f'{metric_name}{{namespace="{NAMESPACE}",app="{service_name}"}}'
         url = f"{PROMETHEUS_URL}/api/v1/query_range?query={query}&start={start.isoformat()}Z&end={end.isoformat()}Z&step={step}"
         
         resp = requests.get(url)
