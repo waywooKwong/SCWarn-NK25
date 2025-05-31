@@ -8,6 +8,39 @@
 - cart-service：购物车服务（依赖 product）
 - payment-service：支付服务（依赖 order）
 
+## 服务调用关系
+
+
+
+服务依赖关系如下：
+
+![服务调用关系图](service_relationship.png)
+
+服务间调用关系说明：
+
+1. user-service（用户服务）
+   - 被 order-service 调用获取用户信息
+   - 被 front-end 调用
+
+2. product-service（商品服务）
+   - 被 order-service 调用获取商品信息
+   - 被 cart-service 调用获取商品信息
+   - 被 front-end 调用
+
+3. order-service（订单服务）
+   - 依赖 user-service 获取用户信息
+   - 依赖 product-service 获取商品信息
+   - 被 payment-service 调用
+   - 被 front-end 调用
+
+4. cart-service（购物车服务）
+   - 依赖 product-service 获取商品信息
+   - 被 front-end 调用
+
+5. payment-service（支付服务）
+   - 依赖 order-service 获取订单信息
+   - 被 front-end 调用
+
 ## 快速部署
 0. 进入 micro-demo 目录
    ```
