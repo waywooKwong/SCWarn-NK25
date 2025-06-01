@@ -38,6 +38,7 @@ class VAE(nn.Module):
 
 # Reconstruction + KL divergence losses summed over all elements and batch
 def loss_function(recon_x, x, mu, logvar):
+    # print(f"x: {x}")
     BCE = F.binary_cross_entropy(recon_x, x, reduction='sum')
 
     # see Appendix B from VAE paper:
@@ -59,6 +60,7 @@ def train(dataloader, input_dim, n_epoch, lr=0.001):
         loss_sum = 0
 
         for step, (batch_X, batch_Y) in enumerate(dataloader):
+            print(f"batch_X: {batch_X}")
             model.zero_grad()
 
             recon, mu, logvar = model(batch_X)
@@ -97,15 +99,23 @@ def predict(model, test_data, seq_len):
 
 
 def get_model_VAE(train_data, seq_len=10, batch_size=64, n_epoch=10, lr=0.01):
+    train_data = (train_data - train_data.min()) / (train_data.max() - train_data.min())
     seq_dataset, seq_ground_truth = apply_sliding_window(train_data, seq_len=seq_len, flatten=True)
     train_data_loader = use_mini_batch(seq_dataset, seq_dataset, batch_size)
     input_dim = train_data_loader.dataset.feature_len
-    model = train(train_data_loader, input_dim, n_epoch, lr)
 
+    for batch in train_data_loader:
+        print("Batch data:", batch)
+        break  # 只打印一个 batch 就退出，防止太多输出
+
+    model = train(train_data_loader, input_dim, n_epoch, lr)
     return model
 
 
 def get_prediction_VAE(model, test_data, seq_len):
+
+    test_data = (test_data - test_data.min()) / (test_data.max() - test_data.min())
+
     predict_result, anomaly_score, dim_score = predict(model, test_data, seq_len)
     return anomaly_score, dim_score
 

@@ -1,6 +1,11 @@
+# dataset_name: "hotel-res"
+# dataset_name: "online-boutique"
 dataset_name: "sock-shop"
 
+# train_path: "./data/hotel-res/train/"
+# train_path: "./data/online-boutique/train/"
 train_path: "./data/sock-shop/train/"
+
 test_path: "./data/hotel-res/abnormal/"
 output_path: "./data/hotel-res/normal/"
 
@@ -12,35 +17,35 @@ scaler: 'standard'
 #    to: 7
 
 algorithms:
-  # LSTM:
-  #     epoch: 10
-  #     batch_size: 32
-  #     learning_rate: 0.01 
-  #     seq_len: 10
+  LSTM:
+      epoch: 100
+      batch_size: 32
+      learning_rate: 0.01 
+      seq_len: 10
 
-  # GRU:
-  #     epoch: 10
-  #     batch_size: 32
-  #     learning_rate: 0.01 
-  #     seq_len: 10
+  GRU:
+      epoch: 100
+      batch_size: 32
+      learning_rate: 0.01 
+      seq_len: 10
 
-  # ISST:
-  #     dim_pos: 3
+  ISST:
+      dim_pos: 3
 
-  # AE:
-  #     epoch: 50
-  #     batch_size: 32
-  #     learning_rate: 0.01
-  #     seq_len: 10
+  AE:
+      epoch: 500
+      batch_size: 32
+      learning_rate: 0.01
+      seq_len: 10
 
-  # VAE:
-  #     epoch: 10
-  #     batch_size: 32
-  #     learning_rate: 0.01
-  #     seq_len: 10
+  VAE:
+      epoch: 100
+      batch_size: 32
+      learning_rate: 0.01
+      seq_len: 10
 
   MLSTM:
-      epoch: 10
+      epoch: 100
       batch_size: 32
       learning_rate: 0.01
       seq_len: 10
@@ -49,7 +54,7 @@ algorithms:
         - 4
 
   MMAE:
-      epoch: 10
+      epoch: 100
       batch_size: 32
       learning_rate: 0.01
       seq_len: 15
