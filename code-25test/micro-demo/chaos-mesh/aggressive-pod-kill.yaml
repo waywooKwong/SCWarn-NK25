@@ -1,9 +1,9 @@
 # Chaos Mesh 高强度故障注入配置
-# 对 sock-shop 的各个服务进行频繁的 Pod 终止测试
+# 对 micro-demo 的各个服务进行频繁的 Pod 终止测试
 apiVersion: chaos-mesh.org/v1alpha1
 kind: Schedule
 metadata:
-  name: sock-shop-aggressive-kill
+  name: micro-demo-aggressive-kill
   namespace: chaos-testing
 spec:
   schedule: "*/1 * * * *"  # 每1分钟执行一次
@@ -18,7 +18,6 @@ spec:
         children:
           - kill-frontend
           - kill-backend-services
-          - kill-data-services
 
       # 前端服务故障注入
       - name: kill-frontend
@@ -27,12 +26,12 @@ spec:
         podChaos:
           action: pod-kill
           mode: fixed
-          value: "2"  # 同时杀死2个pod
+          value: "1"  # 同时杀死1个pod
           selector:
             namespaces:
-              - sock-shop
+              - micro-demo
             labelSelectors:
-              name: front-end
+              app: front-end
           gracePeriod: 0  # 立即终止
 
       # 后端服务故障注入
@@ -40,14 +39,13 @@ spec:
         templateType: Parallel
         deadline: 120s
         children:
-          - kill-cart
-          - kill-catalogue
-          - kill-orders
           - kill-payment
+          - kill-product
+          - kill-order
+          - kill-cart
           - kill-user
-          - kill-shipping
 
-      - name: kill-cart
+      - name: kill-payment
         templateType: PodChaos
         deadline: 60s
         podChaos:
@@ -56,12 +54,12 @@ spec:
           value: "50"  # 杀死50%的pods
           selector:
             namespaces:
-              - sock-shop
+              - micro-demo
             labelSelectors:
-              name: carts
+              app: payment-service
           gracePeriod: 0
 
-      - name: kill-catalogue
+      - name: kill-product
         templateType: PodChaos
         deadline: 60s
         podChaos:
@@ -70,12 +68,12 @@ spec:
           value: "50"
           selector:
             namespaces:
-              - sock-shop
+              - micro-demo
             labelSelectors:
-              name: catalogue
+              app: product-service
           gracePeriod: 0
 
-      - name: kill-orders
+      - name: kill-order
         templateType: PodChaos
         deadline: 60s
         podChaos:
@@ -84,12 +82,12 @@ spec:
           value: "50"
           selector:
             namespaces:
-              - sock-shop
+              - micro-demo
             labelSelectors:
-              name: orders
+              app: order-service
           gracePeriod: 0
 
-      - name: kill-payment
+      - name: kill-cart
         templateType: PodChaos
         deadline: 60s
         podChaos:
@@ -98,9 +96,9 @@ spec:
           value: "50"
           selector:
             namespaces:
-              - sock-shop
+              - micro-demo
             labelSelectors:
-              name: payment
+              app: cart-service
           gracePeriod: 0
 
       - name: kill-user
@@ -112,57 +110,7 @@ spec:
           value: "50"
           selector:
             namespaces:
-              - sock-shop
+              - micro-demo
             labelSelectors:
-              name: user
-          gracePeriod: 0
-
-      - name: kill-shipping
-        templateType: PodChaos
-        deadline: 60s
-        podChaos:
-          action: pod-kill
-          mode: fixed-percent
-          value: "50"
-          selector:
-            namespaces:
-              - sock-shop
-            labelSelectors:
-              name: shipping
-          gracePeriod: 0
-
-      # 数据服务故障注入
-      - name: kill-data-services
-        templateType: Parallel
-        deadline: 90s
-        children:
-          - kill-queue
-          - kill-rabbitmq
-
-      - name: kill-queue
-        templateType: PodChaos
-        deadline: 45s
-        podChaos:
-          action: pod-kill
-          mode: fixed
-          value: "1"
-          selector:
-            namespaces:
-              - sock-shop
-            labelSelectors:
-              name: queue-master
-          gracePeriod: 0
-
-      - name: kill-rabbitmq
-        templateType: PodChaos
-        deadline: 45s
-        podChaos:
-          action: pod-kill
-          mode: fixed
-          value: "1"
-          selector:
-            namespaces:
-              - sock-shop
-            labelSelectors:
-              name: rabbitmq
+              app: user-service
           gracePeriod: 0 
