@@ -5,14 +5,14 @@ import os
 from datetime import datetime, timedelta
 
 # 配置信息
-PROMETHEUS_URL = "http://127.0.0.1:9090"
+PROMETHEUS_URL = "http://127.0.0.1:63933"
 NAMESPACE = "micro-demo"
 SERVICE_COUNT = 6  # 服务总数，用于计算成功率
 
 # 构建正确的输出目录路径
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(script_dir))  # 回到项目根目录
-OUTPUT_DIR = os.path.join(project_root, "data", "micro-demo", "abnormal")
+OUTPUT_DIR = os.path.join(project_root, "data", "micro-demo", "test")
 
 # 加载指标映射
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -47,7 +47,7 @@ def get_all_services():
 def collect_metrics_for_service(service_name):
     """收集指定服务的所有指标数据"""
     end = datetime.utcnow()
-    start = end - timedelta(hours=2)
+    start = end - timedelta(hours=1)
     step = "5s"
 
     timestamps = set()
