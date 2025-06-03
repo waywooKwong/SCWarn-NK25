@@ -1,0 +1,30 @@
+{
+  "proto": "../protos/demo.proto",
+  "call": "hipstershop.ShippingService.GetQuote",
+  "total": 500,
+  "concurrency": 20,
+  "data": {
+    "address": {
+      "street_address": "1600 Amphitheatre Parkway",
+      "city": "Mountain View",
+      "state": "CA",
+      "country": "USA",
+      "zip_code": 94043
+    },
+    "items": [
+      {
+        "product_id": "OLJCESPC7Z",
+        "quantity": 1
+      }
+    ]
+  },
+  "metadata": {
+    "trace-id": "{{.RequestNumber}}",
+    "timestamp": "{{.TimestampUnixNano}}"
+  },
+  "insecure": true,
+  "connections": 5,
+  "duration": "30s",
+  "timeout": "10s",
+  "host": "localhost:50051"
+} 
