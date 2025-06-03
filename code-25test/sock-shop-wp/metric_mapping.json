@@ -1,0 +1,10 @@
+{
+  "timestamp": "由Prometheus在抓取时自动为每个数据点添加，无需特定指标名称",
+  "ops": "envoy_cluster_upstream_rq_total",
+  "success_rate": "up",
+  "duration": "envoy_cluster_upstream_cx_length_ms_sum",
+  "cpu": "istio_agent_process_cpu_seconds_total",
+  "memory": "istio_agent_process_resident_memory_bytes",
+  "receive": "istio_agent_process_network_receive_bytes_total",
+  "transmit": "istio_agent_process_network_transmit_bytes_total"
+}
