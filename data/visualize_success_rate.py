@@ -2,12 +2,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
+"""
+cd 到 SCWarn/data 目录下运行
+"""
+dataset = "online-boutique"
+success_rate_threshold = 90  # success_rate 设定的值，收集数据设定的是 100
+
 # 设置基础路径和输出文件夹
-dataset = "micro-demo"
-base_path = f"data/{dataset}"
+base_path = f"./{dataset}"
+
+# 可选1：原始数据绘图
 folders = ["abnormal", "normal", "train"]
-output_dir = f"data/images/{dataset}"
-success_rate_threshold = 90
+output_dir = f"./images/{dataset}"
+
+# ## 可选2：处理后的数据绘图
+# folders = ["abnormal_processed", "normal", "train"]
+# output_dir = f"./images/{dataset}-processed"
+
 
 # 创建输出文件夹（如果不存在）
 if not os.path.exists(output_dir):
