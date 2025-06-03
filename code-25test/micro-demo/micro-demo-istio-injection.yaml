@@ -1,0 +1,113 @@
+# micro-demo-fault-injection.yaml
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: micro-demo-fault-injection
+  namespace: micro-demo
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - micro-demo-gateway
+  http:
+  # 新增：前端服务故障注入
+  - match:
+    - uri:
+        exact: "/"    # 只匹配根路径
+    - uri:
+        prefix: "/static"    # 匹配静态资源
+    - uri:
+        prefix: "/assets"    # 匹配资源文件
+    fault:
+      delay:
+        percentage:
+          value: 30  # 只影响30%的请求
+        fixedDelay: 2s
+      abort:
+        percentage:
+          value: 30   # 3%的请求会失败
+        httpStatus: 503
+    route:
+    - destination:
+        host: front-end
+        port:
+          number: 80
+
+  # 场景1：为 product-service 注入延迟
+  - match:
+    - uri:
+        prefix: "/api/products"
+    fault:
+      delay:
+        percentage:
+          value: 30
+        fixedDelay: 5s
+    route:
+    - destination:
+        host: product-service
+        port:
+          number: 80
+
+  # 场景2：为 order-service 注入 HTTP 500 错误
+  - match:
+    - uri:
+        prefix: "/api/orders"
+    fault:
+      abort:
+        percentage:
+          value: 30
+        httpStatus: 500
+    route:
+    - destination:
+        host: order-service
+        port:
+          number: 80
+
+  # 场景3：为 payment-service 注入高延迟
+  - match:
+    - uri:
+        prefix: "/api/payments"
+    fault:
+      delay:
+        percentage:
+          value: 30
+        fixedDelay: 7s
+    route:
+    - destination:
+        host: payment-service
+        port:
+          number: 80
+
+  # 场景4：为 cart-service 注入随机错误
+  - match:
+    - uri:
+        prefix: "/api/cart"
+    fault:
+      abort:
+        percentage:
+          value: 30
+        httpStatus: 503
+    route:
+    - destination:
+        host: cart-service
+        port:
+          number: 80
+
+  # 场景5：为 user-service 注入延迟和错误组合
+  - match:
+    - uri:
+        prefix: "/api/users"
+    fault:
+      delay:
+        percentage:
+          value: 30
+        fixedDelay: 3s
+      abort:
+        percentage:
+          value: 10
+        httpStatus: 400
+    route:
+    - destination:
+        host: user-service
+        port:
+          number: 80

@@ -1,0 +1,152 @@
+# Chaos Mesh Workflow 实验配置
+# 在45分钟内对 sock-shop 的各个服务进行高强度故障注入测试
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: sock-shop-pod-kill
+  namespace: chaos-testing
+spec:
+  entry: entry
+  templates:
+    - name: entry
+      templateType: Serial
+      deadline: 45m
+      children:
+        - phase-frontend
+        - phase-cart-catalogue
+        - phase-orders-payment
+        - phase-user-shipping
+        - phase-queue-rabbitmq
+
+    # 第一阶段：测试前端服务
+    - name: phase-frontend
+      templateType: PodChaos
+      deadline: 2m
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: front-end
+
+    # 第二阶段：同时测试购物车和商品目录服务
+    - name: phase-cart-catalogue
+      templateType: Parallel
+      deadline: 5m
+      children:
+        - kill-cart
+        - kill-catalogue
+
+    - name: kill-cart
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: carts
+
+    - name: kill-catalogue
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: catalogue
+
+    # 第三阶段：测试订单和支付服务
+    - name: phase-orders-payment
+      templateType: Parallel
+      deadline: 4m
+      children:
+        - kill-orders
+        - kill-payment
+
+    - name: kill-orders
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: orders
+
+    - name: kill-payment
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: payment
+
+    # 第四阶段：测试用户和配送服务
+    - name: phase-user-shipping
+      templateType: Parallel
+      deadline: 6m
+      children:
+        - kill-user
+        - kill-shipping
+
+    - name: kill-user
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: user
+
+    - name: kill-shipping
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: shipping
+
+    # 第五阶段：测试队列和消息中间件服务
+    - name: phase-queue-rabbitmq
+      templateType: Parallel
+      deadline: 4m
+      children:
+        - kill-queue
+        - kill-rabbitmq
+
+    - name: kill-queue
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: queue-master
+
+    - name: kill-rabbitmq
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: rabbitmq 

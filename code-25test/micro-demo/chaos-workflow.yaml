@@ -1,0 +1,111 @@
+# Chaos Mesh Workflow 实验配置
+# 在20分钟内对 micro-demo 的多个服务进行混沌实验
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: micro-demo-chaos-workflow
+  namespace: chaos-testing
+spec:
+  entry: entry
+  templates:
+    - name: entry
+      templateType: Serial
+      deadline: 20m
+      children:
+        - payment-phase
+        - product-order-phase
+        - cart-phase
+        - user-phase
+        - frontend-phase
+
+    # 第一阶段：杀死 payment-service
+    - name: payment-phase
+      templateType: Schedule
+      deadline: 8m
+      schedule:
+        schedule: "*/1 * * * *"
+        type: PodChaos
+        concurrencyPolicy: "Forbid"
+        podChaos:
+          action: pod-kill
+          mode: all
+          selector:
+            namespaces:
+              - micro-demo
+            labelSelectors:
+              app: payment-service
+          duration: "30s"   # Pod被删除后等待30秒
+
+    # 第二阶段：并行杀死 product-service 和 order-service
+    - name: product-order-phase
+      templateType: Parallel
+      deadline: 5m
+      children:
+        - kill-product
+        - kill-order
+
+    - name: kill-product
+      templateType: Schedule
+      schedule:
+        schedule: "*/1 * * * *"
+        type: PodChaos
+        concurrencyPolicy: "Forbid"
+        podChaos:
+          action: pod-kill
+          mode: all
+          selector:
+            namespaces:
+              - micro-demo
+            labelSelectors:
+              app: product-service
+
+    - name: kill-order
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - micro-demo
+          labelSelectors:
+            app: order-service
+
+    # 第三阶段：杀死 cart-service
+    - name: cart-phase
+      templateType: PodChaos
+      deadline: 4m
+      podChaos:
+        action: pod-kill
+        mode: random-max-percent
+        value: "50"
+        selector:
+          namespaces:
+            - micro-demo
+          labelSelectors:
+            app: cart-service
+
+    # 第四阶段：杀死 user-service
+    - name: user-phase
+      templateType: PodChaos
+      deadline: 3m
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - micro-demo
+          labelSelectors:
+            app: user-service
+
+    # 第五阶段：杀死 frontend 服务
+    - name: frontend-phase
+      templateType: PodChaos
+      deadline: 2m
+      podChaos:
+        action: pod-kill
+        mode: one
+        selector:
+          namespaces:
+            - micro-demo
+          labelSelectors:
+            app: front-end

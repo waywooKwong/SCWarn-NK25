@@ -7,10 +7,17 @@ from datetime import datetime, timedelta
 # 配置信息
 PROMETHEUS_URL = "http://127.0.0.1:54570"
 NAMESPACE = "micro-demo"
-OUTPUT_DIR = "abnormal"
+SERVICE_COUNT = 6  # 服务总数，用于计算成功率
+
+# 构建正确的输出目录路径
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(os.path.dirname(script_dir))  # 回到项目根目录
+OUTPUT_DIR = os.path.join(project_root, "data", "micro-demo", "test02")
 
 # 加载指标映射
-with open("metric_mapping.json", "r") as f:
+script_dir = os.path.dirname(os.path.abspath(__file__))
+metric_mapping_path = os.path.join(script_dir, "metric_mapping.json")
+with open(metric_mapping_path, "r", encoding="utf-8") as f:
     METRIC_MAPPING = json.load(f)
 
 
@@ -24,7 +31,7 @@ def get_all_services():
         raise Exception("获取服务列表失败")
 
     services = resp.json()["data"]
-    # 过滤出online-boutique命名空间下的服务
+    # 过滤出命名空间下的服务
     filtered_services = []
     for service in services:
         query = (
@@ -40,8 +47,8 @@ def get_all_services():
 def collect_metrics_for_service(service_name):
     """收集指定服务的所有指标数据"""
     end = datetime.utcnow()
-    start = end - timedelta(hours=12)
-    step = "5s"
+    start = end - timedelta(minutes=360)
+    step = "2s"
 
     timestamps = set()
     metric_data = {}
@@ -96,12 +103,14 @@ def collect_metrics_for_service(service_name):
 def generate_csv_for_service(service_name, timestamps, metric_data):
     """为指定服务生成CSV文件"""
     sorted_timestamps = sorted(list(timestamps))
-    metrics = list(METRIC_MAPPING.keys())
+    # 过滤掉timestamp字段，因为时间戳是由Prometheus自动添加的
+    metrics = [key for key in METRIC_MAPPING.keys() if key != "timestamp"]
     header = ["timestamp"] + metrics
 
     rows = []
     for ts in sorted_timestamps:
-        row = [datetime.utcfromtimestamp(ts).isoformat()]
+        # 将Unix时间戳转换为ISO格式的时间字符串
+        row = [datetime.utcfromtimestamp(ts).strftime("%Y-%m-%dT%H:%M:%SZ")]
         for metric in metrics:
             row.append(metric_data.get(ts, {}).get(metric, ""))
         rows.append(row)
@@ -109,7 +118,7 @@ def generate_csv_for_service(service_name, timestamps, metric_data):
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     csv_path = os.path.join(OUTPUT_DIR, f"{service_name}.csv")
 
-    with open(csv_path, "w", newline="") as f:
+    with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerows(rows)
