@@ -1,0 +1,10 @@
+{
+    "front_end_url": "http://127.0.0.1:54605",
+    "simulation_config": {
+        "min_wait_time": 1,
+        "max_wait_time": 5,
+        "payment_probability": 0.8,
+        "user_count": 10,
+        "product_count": 20
+    }
+} 

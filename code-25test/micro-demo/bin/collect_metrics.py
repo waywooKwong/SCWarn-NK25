@@ -5,12 +5,12 @@ import os
 from datetime import datetime, timedelta
 
 # 配置信息
-PROMETHEUS_URL = "http://127.0.0.1:54570"
+PROMETHEUS_URL = "http://127.0.0.1:63933"
 NAMESPACE = "micro-demo"
 OUTPUT_DIR = "abnormal"
 
 # 加载指标映射
-with open("metric_mapping.json", "r") as f:
+with open("metric_mapping.json", "r", encoding="utf-8") as f:
     METRIC_MAPPING = json.load(f)
 
 
