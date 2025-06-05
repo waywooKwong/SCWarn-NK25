@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 # 定义CSV文件夹路径和图像保存路径
-csv_folder = "sock-shop"
+csv_folder = "online-boutique"
 image_folder = os.path.join("image", os.path.basename(csv_folder))
 
 # 确保新的图像保存文件夹存在
