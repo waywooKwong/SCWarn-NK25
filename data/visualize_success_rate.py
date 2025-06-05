@@ -5,7 +5,7 @@ import os
 """
 cd 到 SCWarn/data 目录下运行
 """
-dataset = "online-boutique"
+dataset = "hotel-res"
 success_rate_threshold = 90  # success_rate 设定的值，收集数据设定的是 100
 
 # 设置基础路径和输出文件夹

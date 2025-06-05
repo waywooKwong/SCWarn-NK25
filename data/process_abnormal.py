@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 """
 cd 到 SCWarn/data 目录下运行
 """
-dataset = "online-boutique"
+dataset = "sock-shop"
 
 # 创建输出目录
 output_dir = Path(f"./{dataset}/abnormal_processed")

@@ -326,9 +326,11 @@ if __name__ == "__main__":
         print(case)
         print(f"process {case} ing")
         # !fix1: train_path -> normal_data
-        config["train_path"] = f"data-align/{config.get('dataset_name')}/normal/{case}"
+        config["train_path"] = f"data/{config.get('dataset_name')}/normal/{case}"
         # !fix2: test_path -> 那璞哥的 abnormal 是好的？？
-        config["test_path"] = f"data-align/{config.get('dataset_name')}/abnormal/{case}"
+        config["test_path"] = (
+            f"data/{config.get('dataset_name')}/abnormal_processed/{case}"
+        )
         # fix2: output_path -> result
         config["output_path"] = f"result/{config.get('dataset_name')}/{case}"
 
