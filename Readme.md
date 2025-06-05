@@ -131,3 +131,6 @@ python main.py
 
 And then check the result_path, you will get the anomlay scores for each sample in your testing data.
 
+## 我们的测试
+
+1. 模型权重不断更新
