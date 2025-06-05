@@ -1,0 +1,18 @@
+{
+  "proto": "../protos/demo.proto",
+  "call": "hipstershop.CartService.GetCart",
+  "total": 500,
+  "concurrency": 20,
+  "data": {
+    "user_id": "test-user"
+  },
+  "metadata": {
+    "trace-id": "{{.RequestNumber}}",
+    "timestamp": "{{.TimestampUnixNano}}"
+  },
+  "insecure": true,
+  "connections": 5,
+  "duration": "30s",
+  "timeout": "10s",
+  "host": "localhost:7070"
+} 

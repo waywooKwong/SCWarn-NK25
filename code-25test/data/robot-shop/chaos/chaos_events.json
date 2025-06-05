@@ -1,0 +1,86 @@
+[
+  {
+    "timestamp": "2025-05-30T14:37:32.150318",
+    "type": "INFO",
+    "message": "开始监控 13 个服务",
+    "elapsed_seconds": 1.149889
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.542885",
+    "type": "INFO",
+    "message": "保存 cart 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\cart_chaos.csv",
+    "elapsed_seconds": 1802.542456
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.552723",
+    "type": "INFO",
+    "message": "保存 catalogue 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\catalogue_chaos.csv",
+    "elapsed_seconds": 1802.552294
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.555724",
+    "type": "INFO",
+    "message": "保存 chaos-daemon 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\chaos-daemon_chaos.csv",
+    "elapsed_seconds": 1802.555295
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.558254",
+    "type": "INFO",
+    "message": "保存 dispatch 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\dispatch_chaos.csv",
+    "elapsed_seconds": 1802.557825
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.562032",
+    "type": "INFO",
+    "message": "保存 mongodb 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\mongodb_chaos.csv",
+    "elapsed_seconds": 1802.561603
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.565457",
+    "type": "INFO",
+    "message": "保存 mysql 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\mysql_chaos.csv",
+    "elapsed_seconds": 1802.565028
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.568752",
+    "type": "INFO",
+    "message": "保存 payment 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\payment_chaos.csv",
+    "elapsed_seconds": 1802.568323
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.572755",
+    "type": "INFO",
+    "message": "保存 rabbitmq 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\rabbitmq_chaos.csv",
+    "elapsed_seconds": 1802.572326
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.576264",
+    "type": "INFO",
+    "message": "保存 ratings 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\ratings_chaos.csv",
+    "elapsed_seconds": 1802.575835
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.579278",
+    "type": "INFO",
+    "message": "保存 redis 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\redis_chaos.csv",
+    "elapsed_seconds": 1802.578849
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.583280",
+    "type": "INFO",
+    "message": "保存 shipping 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\shipping_chaos.csv",
+    "elapsed_seconds": 1802.582851
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.587281",
+    "type": "INFO",
+    "message": "保存 user 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\user_chaos.csv",
+    "elapsed_seconds": 1802.586852
+  },
+  {
+    "timestamp": "2025-05-30T15:07:33.591320",
+    "type": "INFO",
+    "message": "保存 web 的监控数据到 D:\\WorkSpace\\VScodeProject\\SCwarn\\code-25test\\data\\robot-shop\\chaos\\web_chaos.csv",
+    "elapsed_seconds": 1802.590891
+  }
+]

@@ -1,0 +1,274 @@
+# Chaos Mesh Workflow 实验配置 - Sock Shop
+# 在1小时内随机杀死多个服务pods，每个pod的杀死持续时间较长
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: sock-shop-intensive-pod-kill
+  namespace: chaos-testing
+spec:
+  entry: entry
+  templates:
+    - name: entry
+      templateType: Serial
+      deadline: 60m # 持续1小时
+      children:
+        - kill-phase-1
+        - kill-phase-2
+        - kill-phase-3
+        - kill-phase-4
+        - kill-phase-5
+        - kill-phase-6
+        - kill-phase-7
+        - kill-phase-8
+
+    # 第一阶段：杀死front-end和catalogue (8分钟)
+    - name: kill-phase-1
+      templateType: Parallel
+      deadline: 8m
+      children:
+        - kill-frontend
+        - kill-catalogue
+
+    - name: kill-frontend
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: front-end
+
+    - name: kill-catalogue
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: catalogue
+
+    # 第二阶段：杀死carts、orders和payment (10分钟)
+    - name: kill-phase-2
+      templateType: Parallel
+      deadline: 10m
+      children:
+        - kill-carts
+        - kill-orders
+        - kill-payment
+
+    - name: kill-carts
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: carts
+
+    - name: kill-orders
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: orders
+
+    - name: kill-payment
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: payment
+
+    # 第三阶段：随机杀死user和catalogue-db服务 (7分钟)
+    - name: kill-phase-3
+      templateType: PodChaos
+      deadline: 7m
+      podChaos:
+        action: pod-kill
+        mode: random-max-percent
+        value: "100" # 杀死所有匹配的pods
+        selector:
+          namespaces:
+            - sock-shop
+          expressionSelectors:
+            - key: name
+              operator: In
+              values:
+                - user
+                - catalogue-db
+
+    # 第四阶段：杀死orders-db和shipping (9分钟)
+    - name: kill-phase-4
+      templateType: Parallel
+      deadline: 9m
+      children:
+        - kill-orders-db
+        - kill-shipping
+
+    - name: kill-orders-db
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: orders-db
+
+    - name: kill-shipping
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: shipping
+
+    # 第五阶段：杀死queue-master和carts-db (6分钟)
+    - name: kill-phase-5
+      templateType: Parallel
+      deadline: 6m
+      children:
+        - kill-queue-master
+        - kill-carts-db
+
+    - name: kill-queue-master
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: queue-master
+
+    - name: kill-carts-db
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: carts-db
+
+    # 第六阶段：再次杀死关键服务 (8分钟)
+    - name: kill-phase-6
+      templateType: Parallel
+      deadline: 8m
+      children:
+        - kill-frontend-2
+        - kill-carts-2
+        - kill-orders-2
+
+    - name: kill-frontend-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: front-end
+
+    - name: kill-carts-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: carts
+
+    - name: kill-orders-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: orders
+
+    # 第七阶段：随机杀死50%的所有服务，排除rabbitmq和session-db (7分钟)
+    - name: kill-phase-7
+      templateType: PodChaos
+      deadline: 7m
+      podChaos:
+        action: pod-kill
+        mode: random-max-percent
+        value: "50"
+        selector:
+          namespaces:
+            - sock-shop
+          expressionSelectors:
+            - key: name
+              operator: NotIn
+              values:
+                - rabbitmq
+                - session-db
+
+    # 第八阶段：最后一轮杀死多个服务 (5分钟)
+    - name: kill-phase-8
+      templateType: Parallel
+      deadline: 5m
+      children:
+        - kill-payment-2
+        - kill-catalogue-2
+        - kill-user-2
+
+    - name: kill-payment-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: payment
+
+    - name: kill-catalogue-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: catalogue
+
+    - name: kill-user-2
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - sock-shop
+          labelSelectors:
+            name: user

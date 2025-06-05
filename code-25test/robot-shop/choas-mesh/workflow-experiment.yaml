@@ -1,0 +1,123 @@
+# Chaos Mesh Workflow 实验配置
+# 在30分钟内随机杀死2个以上的服务pods，每个pod的杀死持续时间随机
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: robot-shop-random-pod-kill
+  namespace: chaos-testing
+spec:
+  entry: entry
+  templates:
+    - name: entry
+      templateType: Serial
+      deadline: 30m
+      children:
+        - random-kill-phase-1
+        - random-kill-phase-2
+        - random-kill-phase-3
+        - random-kill-phase-4
+        - random-kill-phase-5
+
+    # 第一阶段：杀死payment服务
+    - name: random-kill-phase-1
+      templateType: PodChaos
+      deadline: 3m
+      podChaos:
+        action: pod-kill
+        mode: one
+        selector:
+          namespaces:
+            - robot-shop
+          labelSelectors:
+            service: payment
+
+    # 第二阶段：杀死cart和catalogue服务
+    - name: random-kill-phase-2
+      templateType: Parallel
+      deadline: 5m
+      children:
+        - kill-cart
+        - kill-catalogue
+
+    - name: kill-cart
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - robot-shop
+          labelSelectors:
+            service: cart
+
+    - name: kill-catalogue
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - robot-shop
+          labelSelectors:
+            service: catalogue
+
+    # 第三阶段：随机杀死shipping或dispatch
+    - name: random-kill-phase-3
+      templateType: PodChaos
+      deadline: 4m
+      podChaos:
+        action: pod-kill
+        mode: random-max-percent
+        value: "50"
+        selector:
+          namespaces:
+            - robot-shop
+          expressionSelectors:
+            - key: service
+              operator: In
+              values:
+                - shipping
+                - dispatch
+
+    # 第四阶段：杀死web和user服务
+    - name: random-kill-phase-4
+      templateType: Parallel
+      deadline: 6m
+      children:
+        - kill-web
+        - kill-user
+
+    - name: kill-web
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - robot-shop
+          labelSelectors:
+            service: web
+
+    - name: kill-user
+      templateType: PodChaos
+      podChaos:
+        action: pod-kill
+        mode: all
+        selector:
+          namespaces:
+            - robot-shop
+          labelSelectors:
+            service: user
+
+    # 第五阶段：随机杀死ratings服务
+    - name: random-kill-phase-5
+      templateType: PodChaos
+      deadline: 2m
+      podChaos:
+        action: pod-kill
+        mode: one
+        selector:
+          namespaces:
+            - robot-shop
+          labelSelectors:
+            service: ratings

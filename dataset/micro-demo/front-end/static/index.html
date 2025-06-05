@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>微服务演示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>微服务演示</h1>
+    
+    <h2>用户服务</h2>
+    <button class="button" onclick="getUser(1)">获取用户信息</button>
+    
+    <h2>商品服务</h2>
+    <button class="button" onclick="getProduct(1)">获取商品信息</button>
+    
+    <h2>购物车服务</h2>
+    <button class="button" onclick="getCart(1)">查看购物车</button>
+    
+    <h2>订单服务</h2>
+    <button class="button" onclick="getOrder(1)">查看订单</button>
+    
+    <div id="result"></div>
+
+    <script>
+        async function callService(url, method = 'GET', body = null) {
+            try {
+                const options = {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                };
+                if (body) {
+                    options.body = JSON.stringify(body);
+                }
+                const response = await fetch(url, options);
+                const data = await response.json();
+                document.getElementById('result').innerHTML = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('result').innerHTML = `Error: ${error.message}`;
+            }
+        }
+
+        function getUser(id) {
+            callService(`/api/users/${id}`);
+        }
+
+        function getProduct(id) {
+            callService(`/api/products/${id}`);
+        }
+
+        function getCart(id) {
+            callService(`/api/carts/${id}`);
+        }
+
+        function getOrder(id) {
+            callService(`/api/orders/${id}`);
+        }
+    </script>
+</body>
+</html>
