@@ -41,7 +41,7 @@ def get_all_services():
 def collect_metrics_for_service(service_name):
     """收集指定服务的所有指标数据"""
     end = datetime.utcnow()
-    start = end - timedelta(hours=4)
+    start = end - timedelta(hours=2)
     step = "5s"
     
     timestamps = set()

@@ -1,0 +1,269 @@
+# Chaos Mesh 确定性故障注入配置 - Online Boutique
+# 对 online-boutique 的各个微服务进行确定性的 Pod 终止测试，确保100%成功率
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: online-boutique-reliable-kill
+  namespace: chaos-testing
+spec:
+  schedule: "*/2 * * * *" # 每2分钟执行一次，确保足够间隔
+  type: Workflow
+  historyLimit: 10
+  concurrencyPolicy: Forbid
+  workflow:
+    entry: entry
+    templates:
+      - name: entry
+        templateType: Parallel # 改回并行，但控制数量确保成功率
+        deadline: 300s # 5分钟执行时间
+        children:
+          - kill-frontend-services
+          - kill-business-services
+          - kill-data-services
+          - kill-infrastructure-services
+
+      # 前端服务故障注入 - 确保杀死
+      - name: kill-frontend-services
+        templateType: Parallel
+        deadline: 180s
+        children:
+          - kill-frontend
+
+      - name: kill-frontend
+        templateType: PodChaos
+        deadline: 150s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确保杀死2个frontend pod
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: frontend
+          gracePeriod: 0 # 立即强制终止，确保100%成功
+          duration: 30s # 短暂故障持续时间
+
+      # 核心业务服务故障注入 - 高成功率
+      - name: kill-business-services
+        templateType: Parallel # 并行但控制强度
+        deadline: 240s
+        children:
+          - kill-cart
+          - kill-checkout
+          - kill-payment
+          - kill-productcatalog
+          - kill-recommendation
+          - kill-ad
+
+      - name: kill-cart
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确定杀死2个cart服务pods
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: cartservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 45s
+
+      - name: kill-checkout
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确定杀死2个checkout服务pods
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: checkoutservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 45s
+
+      - name: kill-payment
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确定杀死2个payment pods
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: paymentservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 45s
+
+      - name: kill-productcatalog
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确定杀死2个产品目录服务pods
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: productcatalogservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 45s
+
+      - name: kill-recommendation
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1" # 确定杀死1个推荐服务pod
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: recommendationservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 30s
+
+      - name: kill-ad
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1" # 确定杀死1个广告服务pod
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: adservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 30s
+
+      # 支撑服务故障注入 - 确保成功
+      - name: kill-data-services
+        templateType: Parallel # 并行执行数据服务
+        deadline: 240s
+        children:
+          - kill-currency
+          - kill-shipping
+          - kill-email
+
+      - name: kill-currency
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确定杀死2个货币服务pods
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: currencyservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 45s
+
+      - name: kill-shipping
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 确定杀死2个配送服务pods
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: shippingservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 45s
+
+      - name: kill-email
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1" # 确定杀死1个邮件服务pod
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: emailservice
+          gracePeriod: 0 # 强制立即终止
+          duration: 30s
+
+      # 基础设施服务故障注入 - 谨慎但确定
+      - name: kill-infrastructure-services
+        templateType: Parallel
+        deadline: 180s
+        children:
+          - kill-redis
+
+      - name: kill-redis
+        templateType: PodChaos
+        deadline: 150s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1" # 确定杀死1个redis pod
+          selector:
+            namespaces:
+              - online-boutique
+            labelSelectors:
+              app: redis-cart
+          gracePeriod: 5 # redis稍微延迟5秒，但仍要确保杀死
+          duration: 60s
+
+---
+# 高成功率随机故障注入 - 每5分钟一次
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: online-boutique-reliable-random-chaos
+  namespace: chaos-testing
+spec:
+  schedule: "*/5 * * * *" # 每5分钟执行一次随机故障
+  type: PodChaos
+  historyLimit: 5
+  concurrencyPolicy: Forbid
+  podChaos:
+    action: pod-kill
+    mode: fixed-percent
+    value: "25" # 确定杀死25%的online-boutique pods
+    selector:
+      namespaces:
+        - online-boutique
+      labelSelectors: {} # 选择所有pods
+    gracePeriod: 0 # 立即强制终止，确保100%成功率
+    duration: 90s # 持续1.5分钟
+
+---
+# 强制节点故障注入 - 确保物理节点级别的故障
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: online-boutique-node-chaos
+  namespace: chaos-testing
+spec:
+  schedule: "*/10 * * * *" # 每10分钟执行一次节点级故障
+  type: PodChaos
+  historyLimit: 3
+  concurrencyPolicy: Forbid
+  podChaos:
+    action: pod-kill
+    mode: all # 杀死选中节点上的所有目标pods
+    selector:
+      namespaces:
+        - online-boutique
+      labelSelectors:
+        app: frontend # 选择前端服务作为节点故障测试目标
+    gracePeriod: 0 # 强制立即终止
+    duration: 120s # 持续2分钟，确保故障被充分观测
