@@ -1,4 +1,4 @@
-dataset_name: "online-boutique"
+dataset_name: "sock-shop"
 scaler: 'standard'
 
 # select dimensions used to train and test
@@ -7,8 +7,9 @@ scaler: 'standard'
 #    to: 7
 
 algorithms:
+# 数据有8个特征列（不包括timestamp）：ops, success_rate, duration, cpu, memory, receive, transmit
   MLSTM:
-      epoch: 10
+      epoch: 1
       batch_size: 32
       learning_rate: 0.01
       seq_len: 10
@@ -17,7 +18,7 @@ algorithms:
         - 3
 
   MMAE:
-      epoch: 10
+      epoch: 1
       batch_size: 32
       learning_rate: 0.01
       seq_len: 15

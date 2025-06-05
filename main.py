@@ -14,8 +14,8 @@ import torch
 import os
 
 
-# Global Configuration
-with open("config.yml", "r") as f:
+# fix1: encoding=utf-8 ,Global Configuration
+with open("config.yml", "r", encoding="utf-8") as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 # print(config)
 
@@ -319,10 +319,11 @@ def get_csv_files_in_folder(folder_path):
 
 
 if __name__ == "__main__":
-    case_folder = f"data/{config.get('dataset_name')}/normal/"
+    case_folder = f"data/{config.get('dataset_name')}/normal"
     cases = get_csv_files_in_folder(case_folder)
 
     for case in cases:
+        print(case)
         print(f"process {case} ing")
         # !fix1: train_path -> normal_data
         config["train_path"] = f"data/{config.get('dataset_name')}/normal/{case}"
