@@ -1,13 +1,15 @@
-dataset_name: "sock-shop"
+dataset_name: "hotel-res"
 scaler: 'standard'
 
 # select dimensions used to train and test
-# dim:
-#    from: 1
-#    to: 7
+dim:
+   from: 1
+   to: 7
 
 algorithms:
-# 数据有8个特征列（不包括timestamp）：ops, success_rate, duration, cpu, memory, receive, transmit
+# 参数设定：
+# - sock-shop (len: 1442): model [4, 3]
+# 
   MLSTM:
       epoch: 1
       batch_size: 32
@@ -25,6 +27,25 @@ algorithms:
       modal:
         - 4
         - 3
+
+
+#   MLSTM:
+#       epoch: 10
+#       batch_size: 32
+#       learning_rate: 0.01
+#       seq_len: 10
+#       modal:
+#         - 4
+#         - 3
+
+#   MMAE:
+#       epoch: 10
+#       batch_size: 32
+#       learning_rate: 0.01
+#       seq_len: 15
+#       modal:
+#         - 4
+#         - 3
 
 #   LSTM:
 #       epoch: 100
