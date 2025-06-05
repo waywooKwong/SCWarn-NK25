@@ -22,8 +22,12 @@ class MLSTM(nn.Module):
         self.hiddent2out = nn.Linear(hidden_dim*2, input_dim2)
 
     def forward(self, seq1, seq2):
-        lstm_out1, _ = self.lstm1(seq1.view(self.batch_size, -1, self.input_dim1))
-        lstm_out2, _ = self.lstm2(seq2.view(self.batch_size, -1, self.input_dim2))
+        # lstm_out1, _ = self.lstm1(seq1.view(self.batch_size, -1, self.input_dim1))
+        # lstm_out2, _ = self.lstm2(seq2.view(self.batch_size, -1, self.input_dim2))
+
+        lstm_out1, _ = self.lstm1(seq1.reshape(self.batch_size, -1, self.input_dim1))
+        lstm_out2, _ = self.lstm2(seq2.reshape(self.batch_size, -1, self.input_dim2))
+
         shared = torch.cat((lstm_out1, lstm_out1), 2)
 
         # print(lstm_out1.shape, lstm_out2.shape, shared.shape)  #torch.Size([128, 20, 8])
@@ -32,12 +36,15 @@ class MLSTM(nn.Module):
         predict2 = self.hiddent2out(shared)
         predict = torch.cat((predict1, predict2), 2)
 
-        #print(predict1.shape, predict2.shape, predict.shape) #torch.Size([128, 10, 4]) torch.Size([128, 10, 7]) torch.Size([128, 10, 11])
+        print(f"predict1.shape, predict2.shape, predict.shape: {predict1.shape, predict2.shape, predict.shape}")
+
+        print(f"predict[:, -1, :], (lstm_out1[:, -1, :], lstm_out2[:, -1, :]): {predict[:, -1, :].shape, (lstm_out1[:, -1, :].shape, lstm_out2[:, -1, :].shape)}")
 
         return predict[:, -1, :], (lstm_out1[:, -1, :], lstm_out2[:, -1, :])
 
 
 def train(dataloader, modal, batch_size, n_epoch, lr=0.01):
+    print(f"modal in train: {modal}")
     input_dim1, input_dim2 = modal[0], modal[1]
     model = MLSTM(input_dim1, input_dim2, 8, batch_size)
     loss_function = nn.MSELoss()
@@ -52,10 +59,14 @@ def train(dataloader, modal, batch_size, n_epoch, lr=0.01):
 
         loss_sum = 0
         for step, (batch_X, batch_Y) in enumerate(dataloader):
+
+            print(f"step, (batch_X, batch_Y) :{step, (batch_X.shape, batch_Y.shape) }")
+
             model.zero_grad()
             #print(batch_X.shape,batch_Y.shape)   #torch.Size([128, 10, 11]) torch.Size([128, 11])
             predicted, (H1, H2) = model(batch_X[:,:, :input_dim1], batch_X[:, :, input_dim1:])
             # loss = loss_function(predicted, batch_Y) + loss_corr(H1, H2)
+            print(f"predicted:{predicted.shape}")
             loss = loss_function(predicted, batch_Y)
             loss_sum += loss.item()
             if step % 100 == 0:
@@ -68,6 +79,7 @@ def train(dataloader, modal, batch_size, n_epoch, lr=0.01):
 
         print("time: %.2f s" % float(time() - t0))
     return model
+
 
 
 def predict(model, test_data, seq_len, modal):
@@ -100,9 +112,14 @@ def get_model_MLSTM(train_data, modal, seq_len=10, batch_size=64, n_epoch=10, lr
     seq_dataset, seq_ground_truth = apply_sliding_window(train_data, seq_len=seq_len,flatten=False)
     train_data_loader = use_mini_batch(seq_dataset, seq_ground_truth, batch_size)
 
+
+
     model = train(train_data_loader, modal, batch_size, n_epoch, lr)
 
     return model
+
+
+
 
 def get_prediction_MLSTM(model, test_data, seq_len, modal):
     predict_ls, scores, dim_scores = predict(model, test_data, seq_len, modal)

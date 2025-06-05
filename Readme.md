@@ -123,6 +123,14 @@ algorithms:
 
 **Step 3: run SCWarn**
 
+set service name
+
+```shell
+dataset_name: "hotel-res"
+
+train_path: "./data/hotel-res/train/"
+```
+
 Run the command below.
 
 ```shell

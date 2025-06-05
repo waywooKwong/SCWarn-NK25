@@ -40,7 +40,7 @@ def train(dataloader, input_dim, batch_size, n_epoch, lr=0.01):
 
             loss_sum += loss.item()
             if step % 100 == 0:
-                print(loss_sum / 100)
+                print(f"loss_sum/100: {loss_sum / 100}")
                 loss_sum = 0
 
             optimizer.zero_grad()
