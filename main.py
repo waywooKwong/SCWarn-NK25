@@ -228,7 +228,7 @@ if __name__ == '__main__':
     for case in cases:
         print(f"process {case} ing")
         config['train_path'] = f"data/{config.get('dataset_name')}/train/{case}"
-        config['test_path'] = f"data/{config.get('dataset_name')}/abnormal/{case}"
+        config['test_path'] = f"data/{config.get('dataset_name')}/abnormal_processed/{case}"
         config['output_path'] = f"reslut/{config.get('dataset_name')}/{case}"
 
         # load training data
