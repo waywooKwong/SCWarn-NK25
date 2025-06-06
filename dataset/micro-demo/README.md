@@ -52,7 +52,7 @@
    kubectl create namespace micro-demo
    kubectl label namespace micro-demo istio-injection=enabled
    ```
-2. 手动拉取要用到的 python 镜像
+2. 手动拉取要用到的 python 镜像 （若已拉取过，跳过）
    ```
    docker pull python:3.10-slim
    ```

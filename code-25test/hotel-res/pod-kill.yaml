@@ -4,7 +4,7 @@ metadata:
   name: hotel-res-comprehensive-chaos
   namespace: chaos-testing
 spec:
-  schedule: "* * * * *" # 每分钟执行一次
+  schedule: "*/2 * * * *" # 每2分钟执行一次，确保足够间隔
   type: Workflow
   historyLimit: 10
   concurrencyPolicy: Forbid
@@ -12,12 +12,13 @@ spec:
     entry: entry
     templates:
       - name: entry
-        templateType: Parallel
-        deadline: 300s
+        templateType: Parallel # 改回并行，但控制数量确保成功率
+        deadline: 300s # 5分钟执行时间
         children:
           - kill-frontend-services
           - kill-backend-services
           - kill-database-services
+          - kill-normal-services
 
       # 前端服务故障注入
       - name: kill-frontend-services
@@ -26,7 +27,7 @@ spec:
         podChaos:
           action: pod-kill
           mode: fixed
-          value: "1"
+          value: "2" # 确保杀死2个frontend pod
           selector:
             namespaces:
               - hotel-res
@@ -42,7 +43,7 @@ spec:
         podChaos:
           action: pod-kill
           mode: fixed
-          value: "1"
+          value: "2" # 确保杀死2个backend pod
           selector:
             namespaces:
               - hotel-res
@@ -58,11 +59,38 @@ spec:
         podChaos:
           action: pod-kill
           mode: fixed
-          value: "1"
+          value: "2" # 确保杀死2个database pod
           selector:
             namespaces:
+              - mongodb
               - hotel-res
             labelSelectors:
               app: database
           gracePeriod: 0
           duration: 60s
+
+      # 正常运行服务故障注入
+      - name: kill-normal-services
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "2" # 提高注入强度
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              app: consul
+              app: jaeger
+              app: memcached-profile
+              app: memcached-rate
+              app: memcached-reserve
+              app: mongodb-geo
+              app: mongodb-profile
+              app: mongodb-rate
+              app: mongodb-recommendation
+              app: mongodb-reservation
+              app: mongodb-user
+          gracePeriod: 0
+          duration: 30s # 提高注入频率
