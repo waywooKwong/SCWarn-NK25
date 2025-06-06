@@ -35,16 +35,4 @@ async def health_check():
 
 @app.api_route("/api/{service}/{path:path}", methods=["GET", "POST", "PUT", "DELETE"])
 async def proxy_request(request: Request, service: str, path: str):
-    if service not in SERVICE_MAP:
-        return {"error": "Service not found"}, 404
-
-    target_url = f"{SERVICE_MAP[service]}/{path}"
-
-    async with httpx.AsyncClient() as client:
-        response = await client.request(
-            method=request.method,
-            url=target_url,
-            headers=request.headers,
-            content=await request.body(),
-        )
-        return response.json()
+    return {"message": "This is a fixed response from front-end service."}

@@ -1,0 +1,68 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: hotel-res-comprehensive-chaos
+  namespace: chaos-testing
+spec:
+  schedule: "* * * * *" # 每分钟执行一次
+  type: Workflow
+  historyLimit: 10
+  concurrencyPolicy: Forbid
+  workflow:
+    entry: entry
+    templates:
+      - name: entry
+        templateType: Parallel
+        deadline: 300s
+        children:
+          - kill-frontend-services
+          - kill-backend-services
+          - kill-database-services
+
+      # 前端服务故障注入
+      - name: kill-frontend-services
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              app: frontend
+          gracePeriod: 0
+          duration: 60s
+
+      # 后端服务故障注入
+      - name: kill-backend-services
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              app: backend
+          gracePeriod: 0
+          duration: 60s
+
+      # 数据库服务故障注入
+      - name: kill-database-services
+        templateType: PodChaos
+        deadline: 120s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              app: database
+          gracePeriod: 0
+          duration: 60s

@@ -95,6 +95,7 @@
 （可选）删除现有部署和服务
    ```bash
    kubectl delete deployment,service -n micro-demo --all
+   kubectl delete namespace micro-demo
    ```
 
 ## Istio 监控

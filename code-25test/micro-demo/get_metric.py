@@ -5,14 +5,14 @@ import os
 from datetime import datetime, timedelta
 
 # 配置信息
-PROMETHEUS_URL = "http://127.0.0.1:63933"
-NAMESPACE = "micro-demo"
-SERVICE_COUNT = 6  # 服务总数，用于计算成功率
+PROMETHEUS_URL = "http://127.0.0.1:59773"
+NAMESPACE = "hotel-res"
+SERVICE_COUNT = 19  # 服务总数，用于计算成功率
 
 # 构建正确的输出目录路径
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.dirname(os.path.dirname(script_dir))  # 回到项目根目录
-OUTPUT_DIR = os.path.join(project_root, "data", "micro-demo", "test")
+OUTPUT_DIR = os.path.join(project_root, "data", NAMESPACE, "test")
 
 # 加载指标映射
 script_dir = os.path.dirname(os.path.abspath(__file__))

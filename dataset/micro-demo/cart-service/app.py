@@ -57,12 +57,9 @@ async def startup_event():
 
 @app.get("/carts/{cart_id}")
 def get_cart(cart_id: int):
-    return {"cart_id": cart_id, "items": []}
+    return {"message": "This is a fixed response from cart-service for get_cart."}
 
 
 @app.post("/carts")
 def create_cart(cart: dict):
-    product_id = cart.get("product_id")
-    user_id = cart.get("user_id")
-    product = requests.get(f"{PRODUCT_SERVICE_URL}/products/{product_id}").json()
-    return {"msg": "Cart created", "cart": cart, "product": product, "user_id": user_id}
+    return {"message": "This is a fixed response from cart-service for create_cart."}

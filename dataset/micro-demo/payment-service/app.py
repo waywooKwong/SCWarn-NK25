@@ -45,31 +45,11 @@ async def startup_event():
 
 @app.get("/payments/{payment_id}")
 def get_payment(payment_id: int):
-    return {
-        "payment_id": payment_id,
-        "status": random.choice(["pending", "processing", "completed"]),
-        "amount": random.randint(100, 1000),
-    }
+    return {"message": "This is a fixed response from payment-service for get_payment."}
 
 
 @app.post("/payments")
 def create_payment(payment: dict):
-    order_id = payment.get("order_id")
-    user_id = payment.get("user_id")
-
-    # 获取订单信息
-    order = requests.get(f"{ORDER_SERVICE_URL}/orders/{order_id}").json()
-
-    # 获取用户信息
-    user = requests.get(f"{USER_SERVICE_URL}/users/{user_id}").json()
-
-    # 模拟支付处理
-    payment_status = random.choice(["success", "pending", "failed"])
-
     return {
-        "msg": f"Payment {payment_status}",
-        "payment": payment,
-        "order": order,
-        "user": user,
-        "status": payment_status,
+        "message": "This is a fixed response from payment-service for create_payment."
     }

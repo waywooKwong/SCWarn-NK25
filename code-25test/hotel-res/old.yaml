@@ -1,0 +1,209 @@
+# Chaos Mesh 高强度故障注入配置
+# 对 hotel-res 的各个服务进行频繁的 Pod 终止测试
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: hotel-res-aggressive-kill
+  namespace: chaos-testing
+spec:
+  schedule: "*/2 * * * *"  # 每2分钟执行一次
+  type: Workflow
+  historyLimit: 5
+  concurrencyPolicy: Forbid
+  workflow:
+    entry: entry
+    templates:
+      - name: entry
+        templateType: Parallel
+        children:
+          - kill-frontend
+          - kill-backend-services
+          - kill-data-services
+
+      # 前端服务故障注入
+      - name: kill-frontend
+        templateType: PodChaos
+        deadline: 45s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"  # 同时杀死1个pod
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: frontend
+          gracePeriod: 0
+          duration: 30s  # 短暂故障持续时间
+
+      # 后端服务故障注入
+      - name: kill-backend-services
+        templateType: Parallel
+        deadline: 120s
+        children:
+          - kill-geo
+          - kill-profile
+          - kill-rate
+          - kill-recommendation
+          - kill-reservation
+          - kill-search
+          - kill-user
+
+      - name: kill-geo
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"  # 杀死25%的pods
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: geo
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-profile
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: profile
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-rate
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: rate
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-recommendation
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: recommendation
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-reservation
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: reservation
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-search
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: search
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-user
+        templateType: PodChaos
+        deadline: 60s
+        podChaos:
+          action: pod-kill
+          mode: fixed-percent
+          value: "25"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: user
+          gracePeriod: 0
+          duration: 30s
+
+      # 数据服务故障注入
+      - name: kill-data-services
+        templateType: Parallel
+        deadline: 90s
+        children:
+          - kill-consul
+          - kill-memcached
+          - kill-mongodb
+
+      - name: kill-consul
+        templateType: PodChaos
+        deadline: 45s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: consul
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-memcached
+        templateType: PodChaos
+        deadline: 45s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: memcached
+          gracePeriod: 0
+          duration: 30s
+
+      - name: kill-mongodb
+        templateType: PodChaos
+        deadline: 45s
+        podChaos:
+          action: pod-kill
+          mode: fixed
+          value: "1"
+          selector:
+            namespaces:
+              - hotel-res
+            labelSelectors:
+              name: mongodb
+          gracePeriod: 0
+          duration: 30s

@@ -28,9 +28,11 @@ async def startup_event():
 
 @app.get("/products/{product_id}")
 def get_product(product_id: int):
-    return {"product_id": product_id, "name": f"Product{product_id}"}
+    return {"message": "This is a fixed response from product-service for get_product."}
 
 
 @app.post("/products")
 def create_product(product: dict):
-    return {"msg": "Product created", "product": product}
+    return {
+        "message": "This is a fixed response from product-service for create_product."
+    }
