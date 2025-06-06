@@ -4,10 +4,6 @@ SCWarn can identify bad software changes in online service systems.
 
 Our repo fork: https://github.com/FSEwork/SCWarn
 
-原SCWarn发表于2021年，使用python3.7版本的依赖包。
-
-我们的复现使用python3.11，并对应更新安装包，经测试可以正确运行。
-
 ## 虚拟环境配置流程
 
 创建conda环境
@@ -32,6 +28,11 @@ pip install -r requirements_py311.txt
 ```
 
 ## 依赖包版本对应
+
+原SCWarn发表于2021年，使用python3.7版本的依赖包。
+
+我们的复现使用python3.11，并对应更新安装包，经测试可以正确运行。
+
 注意：>= 右侧对应的版本号，就是实际的版本
 ```
 numpy >= 2.1.3
