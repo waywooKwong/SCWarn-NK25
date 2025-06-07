@@ -1,0 +1,659 @@
+2025-06-07 12:22:27,682 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-06-07 12:22:27,693 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2025-06-07 12:22:27,694 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2025-06-07 12:22:27,694 INFO o.a.j.JMeter: Setting JMeter property: HOST=localhost
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: Version 5.6.3
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: java.version=21.0.7
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: os.name=Mac OS X
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: os.arch=aarch64
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: os.version=15.3.1
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: file.encoding=UTF-8
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: java.awt.headless=true
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-06-07 12:22:27,696 INFO o.a.j.JMeter: Available Processors =8
+2025-06-07 12:22:27,701 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-06-07 12:22:27,702 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-06-07 12:22:27,702 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2025-06-07 12:22:27,702 INFO o.a.j.JMeter: user.dir  =/Users/liqun/projects/micro-demo/jmeter_test
+2025-06-07 12:22:27,702 INFO o.a.j.JMeter: PWD       =/Users/liqun/projects/micro-demo/jmeter_test
+2025-06-07 12:22:27,703 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: liqundeMacBook-Air.local FullName: localhost
+2025-06-07 12:22:27,708 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/liqun/projects/micro-demo/jmeter_test/report/html'
+2025-06-07 12:22:27,710 INFO o.a.j.s.FileServer: Default base='/Users/liqun/projects/micro-demo/jmeter_test'
+2025-06-07 12:22:27,711 INFO o.a.j.s.FileServer: Set new base='/Users/liqun/projects/micro-demo/jmeter_test'
+2025-06-07 12:22:27,784 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-06-07 12:22:27,806 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-06-07 12:22:27,807 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-06-07 12:22:27,808 INFO o.a.j.s.SaveService: Loading file: micro_services_test.jmx
+2025-06-07 12:22:27,838 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-07 12:22:27,838 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-07 12:22:27,838 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-07 12:22:27,838 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-06-07 12:22:27,838 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-06-07 12:22:27,838 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-06-07 12:22:27,852 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-06-07 12:22:27,854 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2025-06-07 12:22:27,854 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: report/result.jtl
+2025-06-07 12:22:27,854 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
+2025-06-07 12:22:27,854 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2025-06-07 12:22:27,855 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2025-06-07 12:22:27,856 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2025-06-07 12:22:27,857 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,858 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2025-06-07 12:22:27,859 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2025-06-07 12:22:27,865 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-06-07 12:22:27,865 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-06-07 12:22:27,865 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-06-07 12:22:27,867 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-06-07 12:22:27,867 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-06-07 12:22:27,890 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2025-06-07 12:22:27,928 INFO o.a.j.JMeter: Running test (1749270147928)
+2025-06-07 12:22:27,935 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 用户服务测试组
+2025-06-07 12:22:27,935 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group 用户服务测试组.
+2025-06-07 12:22:27,935 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-07 12:22:27,936 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=10 delayedStart=false
+2025-06-07 12:22:27,938 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-1
+2025-06-07 12:22:27,943 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-06-07 12:22:27,943 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : 商品服务测试组
+2025-06-07 12:22:27,943 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group 商品服务测试组.
+2025-06-07 12:22:27,943 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-07 12:22:27,943 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=50 ramp-up=10 delayedStart=false
+2025-06-07 12:22:27,943 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-1
+2025-06-07 12:22:27,947 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = liqundeMacBook-Air.local
+2025-06-07 12:22:27,948 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-06-07 12:22:27,948 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : 购物车服务测试组
+2025-06-07 12:22:27,948 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group 购物车服务测试组.
+2025-06-07 12:22:27,948 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-07 12:22:27,948 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=30 ramp-up=5 delayedStart=false
+2025-06-07 12:22:27,948 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-1
+2025-06-07 12:22:27,950 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-06-07 12:22:27,951 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-06-07 12:22:27,951 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-06-07 12:22:27,951 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-06-07 12:22:27,951 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-06-07 12:22:27,952 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2025-06-07 12:22:27,952 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : 订单服务测试组
+2025-06-07 12:22:27,952 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group 订单服务测试组.
+2025-06-07 12:22:27,952 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-07 12:22:27,952 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=20 ramp-up=5 delayedStart=false
+2025-06-07 12:22:27,952 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-1
+2025-06-07 12:22:27,953 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2025-06-07 12:22:27,954 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : 支付服务测试组
+2025-06-07 12:22:27,954 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group 支付服务测试组.
+2025-06-07 12:22:27,954 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-06-07 12:22:27,954 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=20 ramp-up=5 delayedStart=false
+2025-06-07 12:22:27,954 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-1
+2025-06-07 12:22:27,956 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2025-06-07 12:22:27,956 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-06-07 12:22:28,042 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-1
+2025-06-07 12:22:28,042 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-1
+2025-06-07 12:22:28,044 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-1
+2025-06-07 12:22:28,044 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-1
+2025-06-07 12:22:28,044 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-1
+2025-06-07 12:22:28,044 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-1
+2025-06-07 12:22:28,069 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-1
+2025-06-07 12:22:28,069 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-1
+2025-06-07 12:22:28,069 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-1
+2025-06-07 12:22:28,069 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-1
+2025-06-07 12:22:28,120 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-2
+2025-06-07 12:22:28,138 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-2
+2025-06-07 12:22:28,142 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-2
+2025-06-07 12:22:28,143 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-2
+2025-06-07 12:22:28,143 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-2
+2025-06-07 12:22:28,186 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-2
+2025-06-07 12:22:28,186 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-2
+2025-06-07 12:22:28,190 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-2
+2025-06-07 12:22:28,190 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-2
+2025-06-07 12:22:28,207 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-2
+2025-06-07 12:22:28,209 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-2
+2025-06-07 12:22:28,233 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-2
+2025-06-07 12:22:28,233 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-2
+2025-06-07 12:22:28,233 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-2
+2025-06-07 12:22:28,233 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-2
+2025-06-07 12:22:28,285 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-3
+2025-06-07 12:22:28,310 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-3
+2025-06-07 12:22:28,310 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-3
+2025-06-07 12:22:28,340 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-3
+2025-06-07 12:22:28,347 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-3
+2025-06-07 12:22:28,395 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-3
+2025-06-07 12:22:28,395 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-3
+2025-06-07 12:22:28,399 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-3
+2025-06-07 12:22:28,399 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-3
+2025-06-07 12:22:28,453 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-4
+2025-06-07 12:22:28,454 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-3
+2025-06-07 12:22:28,458 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-3
+2025-06-07 12:22:28,481 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-4
+2025-06-07 12:22:28,481 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-3
+2025-06-07 12:22:28,481 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-4
+2025-06-07 12:22:28,481 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-3
+2025-06-07 12:22:28,482 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-3
+2025-06-07 12:22:28,482 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-3
+2025-06-07 12:22:28,542 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-4
+2025-06-07 12:22:28,547 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-4
+2025-06-07 12:22:28,595 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-4
+2025-06-07 12:22:28,595 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-4
+2025-06-07 12:22:28,599 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-4
+2025-06-07 12:22:28,599 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-4
+2025-06-07 12:22:28,619 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-5
+2025-06-07 12:22:28,647 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-5
+2025-06-07 12:22:28,647 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-5
+2025-06-07 12:22:28,706 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-4
+2025-06-07 12:22:28,707 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-4
+2025-06-07 12:22:28,738 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-5
+2025-06-07 12:22:28,741 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-4
+2025-06-07 12:22:28,741 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-4
+2025-06-07 12:22:28,742 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-4
+2025-06-07 12:22:28,742 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-4
+2025-06-07 12:22:28,745 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-5
+2025-06-07 12:22:28,783 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-6
+2025-06-07 12:22:28,788 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-5
+2025-06-07 12:22:28,788 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-5
+2025-06-07 12:22:28,793 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-5
+2025-06-07 12:22:28,793 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-5
+2025-06-07 12:22:28,806 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-6
+2025-06-07 12:22:28,806 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-6
+2025-06-07 12:22:28,941 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-6
+2025-06-07 12:22:28,945 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-6
+2025-06-07 12:22:28,952 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-7
+2025-06-07 12:22:28,953 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-5
+2025-06-07 12:22:28,955 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-5
+2025-06-07 12:22:28,994 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-7
+2025-06-07 12:22:28,994 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-5
+2025-06-07 12:22:28,994 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-7
+2025-06-07 12:22:28,994 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-5
+2025-06-07 12:22:28,995 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-5
+2025-06-07 12:22:28,995 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-5
+2025-06-07 12:22:29,016 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-6
+2025-06-07 12:22:29,016 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-6
+2025-06-07 12:22:29,016 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-6
+2025-06-07 12:22:29,016 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-6
+2025-06-07 12:22:29,121 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-8
+2025-06-07 12:22:29,137 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-7
+2025-06-07 12:22:29,149 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-7
+2025-06-07 12:22:29,156 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-8
+2025-06-07 12:22:29,156 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-8
+2025-06-07 12:22:29,193 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-7
+2025-06-07 12:22:29,193 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-7
+2025-06-07 12:22:29,203 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-7
+2025-06-07 12:22:29,203 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-7
+2025-06-07 12:22:29,205 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-6
+2025-06-07 12:22:29,209 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-6
+2025-06-07 12:22:29,229 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-6
+2025-06-07 12:22:29,229 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-6
+2025-06-07 12:22:29,233 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-6
+2025-06-07 12:22:29,233 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-6
+2025-06-07 12:22:29,289 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-9
+2025-06-07 12:22:29,317 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-9
+2025-06-07 12:22:29,317 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-9
+2025-06-07 12:22:29,340 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-8
+2025-06-07 12:22:29,347 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-8
+2025-06-07 12:22:29,397 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-8
+2025-06-07 12:22:29,397 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-8
+2025-06-07 12:22:29,401 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-8
+2025-06-07 12:22:29,401 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-8
+2025-06-07 12:22:29,454 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-10
+2025-06-07 12:22:29,458 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-7
+2025-06-07 12:22:29,458 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-7
+2025-06-07 12:22:29,489 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-10
+2025-06-07 12:22:29,489 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-10
+2025-06-07 12:22:29,490 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-7
+2025-06-07 12:22:29,490 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-7
+2025-06-07 12:22:29,490 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-7
+2025-06-07 12:22:29,490 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-7
+2025-06-07 12:22:29,541 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-9
+2025-06-07 12:22:29,545 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-9
+2025-06-07 12:22:29,590 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-9
+2025-06-07 12:22:29,590 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-9
+2025-06-07 12:22:29,591 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-9
+2025-06-07 12:22:29,591 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-9
+2025-06-07 12:22:29,623 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-11
+2025-06-07 12:22:29,648 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-11
+2025-06-07 12:22:29,649 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-11
+2025-06-07 12:22:29,705 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-8
+2025-06-07 12:22:29,707 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-8
+2025-06-07 12:22:29,737 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-8
+2025-06-07 12:22:29,737 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-8
+2025-06-07 12:22:29,737 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-8
+2025-06-07 12:22:29,737 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-8
+2025-06-07 12:22:29,742 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-10
+2025-06-07 12:22:29,746 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-10
+2025-06-07 12:22:29,785 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-10
+2025-06-07 12:22:29,785 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-10
+2025-06-07 12:22:29,787 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-12
+2025-06-07 12:22:29,788 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-10
+2025-06-07 12:22:29,788 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-10
+2025-06-07 12:22:29,808 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-12
+2025-06-07 12:22:29,808 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-12
+2025-06-07 12:22:29,938 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-11
+2025-06-07 12:22:29,944 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-11
+2025-06-07 12:22:29,953 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-9
+2025-06-07 12:22:29,954 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-13
+2025-06-07 12:22:29,959 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-9
+2025-06-07 12:22:29,985 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-9
+2025-06-07 12:22:29,985 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-9
+2025-06-07 12:22:29,985 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-13
+2025-06-07 12:22:29,985 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-13
+2025-06-07 12:22:29,993 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-9
+2025-06-07 12:22:29,994 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-9
+2025-06-07 12:22:29,999 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-11
+2025-06-07 12:22:29,999 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-11
+2025-06-07 12:22:30,007 INFO o.a.j.r.Summariser: summary +    375 in 00:00:02 =  180.5/s Avg:     5 Min:     3 Max:    33 Err:     0 (0.00%) Active: 1 Started: 53 Finished: 52
+2025-06-07 12:22:30,007 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-11
+2025-06-07 12:22:30,007 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-11
+2025-06-07 12:22:30,124 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-14
+2025-06-07 12:22:30,137 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-12
+2025-06-07 12:22:30,144 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-12
+2025-06-07 12:22:30,156 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-14
+2025-06-07 12:22:30,156 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-14
+2025-06-07 12:22:30,198 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-12
+2025-06-07 12:22:30,198 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-12
+2025-06-07 12:22:30,203 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-12
+2025-06-07 12:22:30,203 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-12
+2025-06-07 12:22:30,205 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-10
+2025-06-07 12:22:30,205 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-10
+2025-06-07 12:22:30,227 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-10
+2025-06-07 12:22:30,227 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-10
+2025-06-07 12:22:30,228 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-10
+2025-06-07 12:22:30,228 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-10
+2025-06-07 12:22:30,291 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-15
+2025-06-07 12:22:30,313 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-15
+2025-06-07 12:22:30,313 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-15
+2025-06-07 12:22:30,340 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-13
+2025-06-07 12:22:30,344 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-13
+2025-06-07 12:22:30,390 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-13
+2025-06-07 12:22:30,390 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-13
+2025-06-07 12:22:30,390 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-13
+2025-06-07 12:22:30,390 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-13
+2025-06-07 12:22:30,454 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-11
+2025-06-07 12:22:30,454 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-11
+2025-06-07 12:22:30,457 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-16
+2025-06-07 12:22:30,482 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-11
+2025-06-07 12:22:30,482 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-11
+2025-06-07 12:22:30,482 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-11
+2025-06-07 12:22:30,482 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-11
+2025-06-07 12:22:30,482 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-16
+2025-06-07 12:22:30,482 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-16
+2025-06-07 12:22:30,539 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-14
+2025-06-07 12:22:30,544 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-14
+2025-06-07 12:22:30,584 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-14
+2025-06-07 12:22:30,584 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-14
+2025-06-07 12:22:30,584 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-14
+2025-06-07 12:22:30,584 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-14
+2025-06-07 12:22:30,625 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-17
+2025-06-07 12:22:30,650 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-17
+2025-06-07 12:22:30,650 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-17
+2025-06-07 12:22:30,707 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-12
+2025-06-07 12:22:30,708 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-12
+2025-06-07 12:22:30,733 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-12
+2025-06-07 12:22:30,733 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-12
+2025-06-07 12:22:30,734 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-12
+2025-06-07 12:22:30,734 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-12
+2025-06-07 12:22:30,741 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-15
+2025-06-07 12:22:30,745 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-15
+2025-06-07 12:22:30,785 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-15
+2025-06-07 12:22:30,785 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-15
+2025-06-07 12:22:30,785 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-15
+2025-06-07 12:22:30,785 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-15
+2025-06-07 12:22:30,793 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-18
+2025-06-07 12:22:30,814 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-18
+2025-06-07 12:22:30,814 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-18
+2025-06-07 12:22:30,937 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-16
+2025-06-07 12:22:30,947 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-16
+2025-06-07 12:22:30,952 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-13
+2025-06-07 12:22:30,955 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-19
+2025-06-07 12:22:30,955 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-13
+2025-06-07 12:22:30,985 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-13
+2025-06-07 12:22:30,985 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-13
+2025-06-07 12:22:30,991 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-19
+2025-06-07 12:22:30,991 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-19
+2025-06-07 12:22:30,992 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-13
+2025-06-07 12:22:30,992 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-13
+2025-06-07 12:22:30,998 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-16
+2025-06-07 12:22:30,998 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-16
+2025-06-07 12:22:31,007 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-16
+2025-06-07 12:22:31,007 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-16
+2025-06-07 12:22:31,122 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-20
+2025-06-07 12:22:31,136 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-17
+2025-06-07 12:22:31,143 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-17
+2025-06-07 12:22:31,148 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-20
+2025-06-07 12:22:31,148 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-20
+2025-06-07 12:22:31,176 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-17
+2025-06-07 12:22:31,176 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-17
+2025-06-07 12:22:31,182 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-17
+2025-06-07 12:22:31,182 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-17
+2025-06-07 12:22:31,203 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-14
+2025-06-07 12:22:31,205 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-14
+2025-06-07 12:22:31,222 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-14
+2025-06-07 12:22:31,222 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-14
+2025-06-07 12:22:31,225 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-14
+2025-06-07 12:22:31,225 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-14
+2025-06-07 12:22:31,293 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-21
+2025-06-07 12:22:31,316 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-21
+2025-06-07 12:22:31,316 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-21
+2025-06-07 12:22:31,342 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-18
+2025-06-07 12:22:31,344 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-18
+2025-06-07 12:22:31,385 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-18
+2025-06-07 12:22:31,385 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-18
+2025-06-07 12:22:31,385 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-18
+2025-06-07 12:22:31,385 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-18
+2025-06-07 12:22:31,457 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-15
+2025-06-07 12:22:31,457 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-15
+2025-06-07 12:22:31,459 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-22
+2025-06-07 12:22:31,484 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-22
+2025-06-07 12:22:31,484 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-15
+2025-06-07 12:22:31,484 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-15
+2025-06-07 12:22:31,484 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-22
+2025-06-07 12:22:31,484 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-15
+2025-06-07 12:22:31,484 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-15
+2025-06-07 12:22:31,540 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-19
+2025-06-07 12:22:31,548 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-19
+2025-06-07 12:22:31,586 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-19
+2025-06-07 12:22:31,586 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-19
+2025-06-07 12:22:31,589 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-19
+2025-06-07 12:22:31,589 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-19
+2025-06-07 12:22:31,631 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-23
+2025-06-07 12:22:31,678 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-23
+2025-06-07 12:22:31,678 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-23
+2025-06-07 12:22:31,704 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-16
+2025-06-07 12:22:31,707 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-16
+2025-06-07 12:22:31,725 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-16
+2025-06-07 12:22:31,727 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-16
+2025-06-07 12:22:31,730 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-16
+2025-06-07 12:22:31,730 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-16
+2025-06-07 12:22:31,737 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-20
+2025-06-07 12:22:31,745 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-20
+2025-06-07 12:22:31,778 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-20
+2025-06-07 12:22:31,779 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-20
+2025-06-07 12:22:31,785 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-20
+2025-06-07 12:22:31,785 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-20
+2025-06-07 12:22:31,792 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-24
+2025-06-07 12:22:31,808 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-24
+2025-06-07 12:22:31,808 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-24
+2025-06-07 12:22:31,941 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-21
+2025-06-07 12:22:31,946 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-21
+2025-06-07 12:22:31,955 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-17
+2025-06-07 12:22:31,957 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-17
+2025-06-07 12:22:31,960 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-25
+2025-06-07 12:22:31,986 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-17
+2025-06-07 12:22:31,986 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-17
+2025-06-07 12:22:31,987 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-17
+2025-06-07 12:22:31,987 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-17
+2025-06-07 12:22:31,993 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-25
+2025-06-07 12:22:31,993 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-25
+2025-06-07 12:22:32,001 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-21
+2025-06-07 12:22:32,001 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-21
+2025-06-07 12:22:32,001 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-21
+2025-06-07 12:22:32,001 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-21
+2025-06-07 12:22:32,126 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-26
+2025-06-07 12:22:32,141 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-22
+2025-06-07 12:22:32,145 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-22
+2025-06-07 12:22:32,156 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-26
+2025-06-07 12:22:32,156 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-26
+2025-06-07 12:22:32,185 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-22
+2025-06-07 12:22:32,185 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-22
+2025-06-07 12:22:32,188 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-22
+2025-06-07 12:22:32,188 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-22
+2025-06-07 12:22:32,204 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-18
+2025-06-07 12:22:32,208 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-18
+2025-06-07 12:22:32,231 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-18
+2025-06-07 12:22:32,231 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-18
+2025-06-07 12:22:32,234 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-18
+2025-06-07 12:22:32,234 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-18
+2025-06-07 12:22:32,291 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-27
+2025-06-07 12:22:32,313 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-27
+2025-06-07 12:22:32,314 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-27
+2025-06-07 12:22:32,341 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-23
+2025-06-07 12:22:32,345 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-23
+2025-06-07 12:22:32,383 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-23
+2025-06-07 12:22:32,383 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-23
+2025-06-07 12:22:32,384 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-23
+2025-06-07 12:22:32,385 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-23
+2025-06-07 12:22:32,457 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-19
+2025-06-07 12:22:32,459 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-19
+2025-06-07 12:22:32,460 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-28
+2025-06-07 12:22:32,492 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-19
+2025-06-07 12:22:32,492 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-28
+2025-06-07 12:22:32,492 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-19
+2025-06-07 12:22:32,492 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-28
+2025-06-07 12:22:32,493 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-19
+2025-06-07 12:22:32,494 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-19
+2025-06-07 12:22:32,541 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-24
+2025-06-07 12:22:32,545 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-24
+2025-06-07 12:22:32,601 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-24
+2025-06-07 12:22:32,601 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-24
+2025-06-07 12:22:32,601 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-24
+2025-06-07 12:22:32,601 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-24
+2025-06-07 12:22:32,630 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-29
+2025-06-07 12:22:32,649 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-29
+2025-06-07 12:22:32,649 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-29
+2025-06-07 12:22:32,704 INFO o.a.j.t.JMeterThread: Thread started: 支付服务测试组 5-20
+2025-06-07 12:22:32,704 INFO o.a.j.t.JMeterThread: Thread started: 订单服务测试组 4-20
+2025-06-07 12:22:32,729 INFO o.a.j.t.JMeterThread: Thread is done: 订单服务测试组 4-20
+2025-06-07 12:22:32,729 INFO o.a.j.t.JMeterThread: Thread finished: 订单服务测试组 4-20
+2025-06-07 12:22:32,729 INFO o.a.j.t.JMeterThread: Thread is done: 支付服务测试组 5-20
+2025-06-07 12:22:32,729 INFO o.a.j.t.JMeterThread: Thread finished: 支付服务测试组 5-20
+2025-06-07 12:22:32,741 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-25
+2025-06-07 12:22:32,745 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-25
+2025-06-07 12:22:32,784 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-25
+2025-06-07 12:22:32,784 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-25
+2025-06-07 12:22:32,788 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-25
+2025-06-07 12:22:32,788 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-25
+2025-06-07 12:22:32,792 INFO o.a.j.t.JMeterThread: Thread started: 购物车服务测试组 3-30
+2025-06-07 12:22:32,808 INFO o.a.j.t.JMeterThread: Thread is done: 购物车服务测试组 3-30
+2025-06-07 12:22:32,808 INFO o.a.j.t.JMeterThread: Thread finished: 购物车服务测试组 3-30
+2025-06-07 12:22:32,938 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-26
+2025-06-07 12:22:32,944 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-26
+2025-06-07 12:22:32,991 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-26
+2025-06-07 12:22:32,991 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-26
+2025-06-07 12:22:32,991 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-26
+2025-06-07 12:22:32,991 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-26
+2025-06-07 12:22:33,142 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-27
+2025-06-07 12:22:33,146 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-27
+2025-06-07 12:22:33,191 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-27
+2025-06-07 12:22:33,191 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-27
+2025-06-07 12:22:33,193 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-27
+2025-06-07 12:22:33,193 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-27
+2025-06-07 12:22:33,339 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-28
+2025-06-07 12:22:33,344 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-28
+2025-06-07 12:22:33,390 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-28
+2025-06-07 12:22:33,390 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-28
+2025-06-07 12:22:33,391 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-28
+2025-06-07 12:22:33,391 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-28
+2025-06-07 12:22:33,539 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-29
+2025-06-07 12:22:33,544 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-29
+2025-06-07 12:22:33,596 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-29
+2025-06-07 12:22:33,596 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-29
+2025-06-07 12:22:33,597 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-29
+2025-06-07 12:22:33,597 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-29
+2025-06-07 12:22:33,740 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-30
+2025-06-07 12:22:33,749 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-30
+2025-06-07 12:22:33,789 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-30
+2025-06-07 12:22:33,789 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-30
+2025-06-07 12:22:33,794 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-30
+2025-06-07 12:22:33,794 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-30
+2025-06-07 12:22:33,941 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-31
+2025-06-07 12:22:33,944 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-31
+2025-06-07 12:22:34,000 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-31
+2025-06-07 12:22:34,000 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-31
+2025-06-07 12:22:34,000 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-31
+2025-06-07 12:22:34,000 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-31
+2025-06-07 12:22:34,141 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-32
+2025-06-07 12:22:34,146 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-32
+2025-06-07 12:22:34,196 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-32
+2025-06-07 12:22:34,196 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-32
+2025-06-07 12:22:34,196 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-32
+2025-06-07 12:22:34,196 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-32
+2025-06-07 12:22:34,341 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-33
+2025-06-07 12:22:34,347 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-33
+2025-06-07 12:22:34,394 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-33
+2025-06-07 12:22:34,394 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-33
+2025-06-07 12:22:34,394 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-33
+2025-06-07 12:22:34,394 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-33
+2025-06-07 12:22:34,541 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-34
+2025-06-07 12:22:34,544 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-34
+2025-06-07 12:22:34,591 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-34
+2025-06-07 12:22:34,591 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-34
+2025-06-07 12:22:34,592 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-34
+2025-06-07 12:22:34,592 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-34
+2025-06-07 12:22:34,739 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-35
+2025-06-07 12:22:34,744 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-35
+2025-06-07 12:22:34,794 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-35
+2025-06-07 12:22:34,794 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-35
+2025-06-07 12:22:34,794 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-35
+2025-06-07 12:22:34,795 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-35
+2025-06-07 12:22:34,941 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-36
+2025-06-07 12:22:34,945 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-36
+2025-06-07 12:22:35,004 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-36
+2025-06-07 12:22:35,004 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-36
+2025-06-07 12:22:35,004 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-36
+2025-06-07 12:22:35,004 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-36
+2025-06-07 12:22:35,143 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-37
+2025-06-07 12:22:35,146 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-37
+2025-06-07 12:22:35,202 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-37
+2025-06-07 12:22:35,202 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-37
+2025-06-07 12:22:35,202 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-37
+2025-06-07 12:22:35,202 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-37
+2025-06-07 12:22:35,343 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-38
+2025-06-07 12:22:35,346 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-38
+2025-06-07 12:22:35,391 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-38
+2025-06-07 12:22:35,392 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-38
+2025-06-07 12:22:35,392 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-38
+2025-06-07 12:22:35,392 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-38
+2025-06-07 12:22:35,541 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-39
+2025-06-07 12:22:35,545 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-39
+2025-06-07 12:22:35,595 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-39
+2025-06-07 12:22:35,595 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-39
+2025-06-07 12:22:35,595 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-39
+2025-06-07 12:22:35,595 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-39
+2025-06-07 12:22:35,741 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-40
+2025-06-07 12:22:35,743 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-40
+2025-06-07 12:22:35,800 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-40
+2025-06-07 12:22:35,800 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-40
+2025-06-07 12:22:35,803 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-40
+2025-06-07 12:22:35,803 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-40
+2025-06-07 12:22:35,936 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-41
+2025-06-07 12:22:35,946 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-41
+2025-06-07 12:22:35,987 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-41
+2025-06-07 12:22:35,987 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-41
+2025-06-07 12:22:35,993 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-41
+2025-06-07 12:22:35,993 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-41
+2025-06-07 12:22:36,141 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-42
+2025-06-07 12:22:36,145 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-42
+2025-06-07 12:22:36,193 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-42
+2025-06-07 12:22:36,193 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-42
+2025-06-07 12:22:36,193 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-42
+2025-06-07 12:22:36,193 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-42
+2025-06-07 12:22:36,340 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-43
+2025-06-07 12:22:36,343 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-43
+2025-06-07 12:22:36,393 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-43
+2025-06-07 12:22:36,393 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-43
+2025-06-07 12:22:36,393 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-43
+2025-06-07 12:22:36,393 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-43
+2025-06-07 12:22:36,541 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-44
+2025-06-07 12:22:36,545 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-44
+2025-06-07 12:22:36,591 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-44
+2025-06-07 12:22:36,592 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-44
+2025-06-07 12:22:36,592 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-44
+2025-06-07 12:22:36,592 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-44
+2025-06-07 12:22:36,738 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-45
+2025-06-07 12:22:36,745 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-45
+2025-06-07 12:22:36,783 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-45
+2025-06-07 12:22:36,783 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-45
+2025-06-07 12:22:36,786 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-45
+2025-06-07 12:22:36,786 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-45
+2025-06-07 12:22:36,937 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-46
+2025-06-07 12:22:36,943 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-46
+2025-06-07 12:22:36,986 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-46
+2025-06-07 12:22:36,986 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-46
+2025-06-07 12:22:36,986 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-46
+2025-06-07 12:22:36,986 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-46
+2025-06-07 12:22:37,138 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-47
+2025-06-07 12:22:37,147 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-47
+2025-06-07 12:22:37,192 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-47
+2025-06-07 12:22:37,192 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-47
+2025-06-07 12:22:37,195 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-47
+2025-06-07 12:22:37,195 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-47
+2025-06-07 12:22:37,341 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-48
+2025-06-07 12:22:37,344 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-48
+2025-06-07 12:22:37,395 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-48
+2025-06-07 12:22:37,395 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-48
+2025-06-07 12:22:37,395 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-48
+2025-06-07 12:22:37,395 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-48
+2025-06-07 12:22:37,538 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-49
+2025-06-07 12:22:37,545 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-49
+2025-06-07 12:22:37,592 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-49
+2025-06-07 12:22:37,592 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-49
+2025-06-07 12:22:37,594 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-49
+2025-06-07 12:22:37,594 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-49
+2025-06-07 12:22:37,741 INFO o.a.j.t.JMeterThread: Thread started: 用户服务测试组 1-50
+2025-06-07 12:22:37,745 INFO o.a.j.t.JMeterThread: Thread started: 商品服务测试组 2-50
+2025-06-07 12:22:37,794 INFO o.a.j.t.JMeterThread: Thread is done: 用户服务测试组 1-50
+2025-06-07 12:22:37,794 INFO o.a.j.t.JMeterThread: Thread finished: 用户服务测试组 1-50
+2025-06-07 12:22:37,795 INFO o.a.j.t.JMeterThread: Thread is done: 商品服务测试组 2-50
+2025-06-07 12:22:37,795 INFO o.a.j.t.JMeterThread: Thread finished: 商品服务测试组 2-50
+2025-06-07 12:22:37,795 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-06-07 12:22:37,796 INFO o.a.j.r.Summariser: summary +    975 in 00:00:08 =  125.2/s Avg:     4 Min:     2 Max:    25 Err:     0 (0.00%) Active: 0 Started: 170 Finished: 170
+2025-06-07 12:22:37,796 INFO o.a.j.r.Summariser: summary =   1350 in 00:00:10 =  136.8/s Avg:     4 Min:     2 Max:    33 Err:     0 (0.00%)
+2025-06-07 12:22:37,796 INFO o.a.j.JMeter: Generating Dashboard
+2025-06-07 12:22:37,797 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2025-06-07 12:22:37,812 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2025-06-07 12:22:37,875 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2025-06-07 12:22:37,875 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2025-06-07 12:22:37,876 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2025-06-07 12:22:37,876 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2025-06-07 12:22:37,878 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2025-06-07 12:22:37,880 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2025-06-07 12:22:37,880 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2025-06-07 12:22:37,880 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2025-06-07 12:22:37,893 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2025-06-07 12:22:37,894 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2025-06-07 12:22:37,894 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2025-06-07 12:22:37,894 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 9450 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2025-06-07 12:22:37,899 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2025-06-07 12:22:37,900 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 20250 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 4050 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 1350 samples
+2025-06-07 12:22:37,901 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 1350 samples produced in 75ms on channel 0
+2025-06-07 12:22:37,901 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2025-06-07 12:22:37,929 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2025-06-07 12:22:37,929 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2025-06-07 12:22:37,929 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2025-06-07 12:22:37,929 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2025-06-07 12:22:37,930 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/liqun/projects/micro-demo/jmeter_test/report/html/statistics.json
+2025-06-07 12:22:37,945 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2025-06-07 12:22:37,946 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/liqun/projects/micro-demo/jmeter_test/report/html
+2025-06-07 12:22:37,989 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/liqun/projects/micro-demo/jmeter_test/report/html, creating folder structure
+2025-06-07 12:22:37,990 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/liqun/projects/micro-demo/jmeter_test/report/html', got message: /Users/liqun/projects/micro-demo/jmeter_test/report/html, found non empty folder with following content [/Users/liqun/projects/micro-demo/jmeter_test/report/html/statistics.json], will be ignored
+2025-06-07 12:22:38,105 INFO o.a.j.JMeter: Dashboard generated

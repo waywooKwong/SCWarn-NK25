@@ -1,0 +1,1351 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1749270147976,33,创建订单,307,Temporary Redirect,订单服务测试组 4-1,,true,,173,220,1,5,http://localhost:30080/api/orders,31,0,10
+1749270147976,33,添加购物车,307,Temporary Redirect,购物车服务测试组 3-1,,true,,172,205,1,5,http://localhost:30080/api/carts,31,0,10
+1749270147976,32,创建支付,307,Temporary Redirect,支付服务测试组 5-1,,true,,175,207,1,5,http://localhost:30080/api/payments,31,0,10
+1749270147976,33,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,5,http://localhost:30080/api/users/7,31,0,10
+1749270147976,33,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,5,http://localhost:30080/api/products/4,31,0,10
+1749270148010,6,创建订单,307,Temporary Redirect,订单服务测试组 4-1,,true,,173,221,1,5,http://localhost:30080/api/orders,6,0,0
+1749270148010,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-1,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,1
+1749270148010,7,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,5,http://localhost:30080/api/products/1,7,0,0
+1749270148010,8,创建支付,307,Temporary Redirect,支付服务测试组 5-1,,true,,175,207,1,5,http://localhost:30080/api/payments,8,0,0
+1749270148010,9,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,5,http://localhost:30080/api/users/7,8,0,0
+1749270148017,9,添加购物车,307,Temporary Redirect,购物车服务测试组 3-1,,true,,172,206,1,5,http://localhost:30080/api/carts,9,0,0
+1749270148018,10,创建支付,307,Temporary Redirect,支付服务测试组 5-1,,true,,175,207,1,5,http://localhost:30080/api/payments,10,0,0
+1749270148017,11,创建订单,307,Temporary Redirect,订单服务测试组 4-1,,true,,173,221,1,5,http://localhost:30080/api/orders,11,0,1
+1749270148019,10,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,5,http://localhost:30080/api/users/3,10,0,0
+1749270148017,12,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,5,http://localhost:30080/api/products/9,12,0,1
+1749270148027,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-1,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,0
+1749270148029,6,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,156,1,5,http://localhost:30080/api/users/10,6,0,0
+1749270148029,7,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,5,http://localhost:30080/api/products/6,7,0,0
+1749270148028,8,创建支付,307,Temporary Redirect,支付服务测试组 5-1,,true,,175,207,1,5,http://localhost:30080/api/payments,8,0,0
+1749270148028,9,创建订单,307,Temporary Redirect,订单服务测试组 4-1,,true,,173,221,1,5,http://localhost:30080/api/orders,9,0,0
+1749270148035,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-1,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,1
+1749270148035,7,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,5,http://localhost:30080/api/users/2,7,0,1
+1749270148036,7,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,159,1,4,http://localhost:30080/api/products/10,7,0,1
+1749270148037,7,创建支付,307,Temporary Redirect,支付服务测试组 5-1,,true,,175,207,1,4,http://localhost:30080/api/payments,7,0,0
+1749270148038,6,创建订单,307,Temporary Redirect,订单服务测试组 4-1,,true,,173,220,1,4,http://localhost:30080/api/orders,6,0,0
+1749270148043,4,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270148043,5,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,1
+1749270148048,4,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270148048,4,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270148053,4,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270148053,4,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270148057,5,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270148057,5,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270148063,5,获取用户信息,200,OK,用户服务测试组 1-1,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270148063,5,获取商品信息,200,OK,商品服务测试组 2-1,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270148121,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-2,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270148126,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-2,,true,,172,206,1,1,http://localhost:30080/api/carts,3,0,0
+1749270148130,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-2,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270148134,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-2,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270148138,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-2,,true,,172,205,1,2,http://localhost:30080/api/carts,4,0,1
+1749270148139,4,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270148143,4,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270148144,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270148148,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270148148,4,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270148153,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270148153,4,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270148157,5,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270148157,5,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270148163,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270148163,4,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270148167,5,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,1
+1749270148167,5,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270148172,4,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270148172,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270148176,5,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270148176,5,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,1
+1749270148181,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,1
+1749270148181,5,获取用户信息,200,OK,用户服务测试组 1-2,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270148186,4,获取商品信息,200,OK,商品服务测试组 2-2,text,true,,206,158,1,1,http://localhost:30080/api/products/1,4,0,0
+1749270148208,5,创建订单,307,Temporary Redirect,订单服务测试组 4-2,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,0
+1749270148209,4,创建支付,307,Temporary Redirect,支付服务测试组 5-2,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270148213,6,创建支付,307,Temporary Redirect,支付服务测试组 5-2,,true,,175,207,1,2,http://localhost:30080/api/payments,6,0,1
+1749270148213,6,创建订单,307,Temporary Redirect,订单服务测试组 4-2,,true,,173,220,1,2,http://localhost:30080/api/orders,6,0,1
+1749270148220,3,创建支付,307,Temporary Redirect,支付服务测试组 5-2,,true,,175,207,1,2,http://localhost:30080/api/payments,3,0,0
+1749270148220,3,创建订单,307,Temporary Redirect,订单服务测试组 4-2,,true,,173,220,1,2,http://localhost:30080/api/orders,3,0,0
+1749270148224,4,创建订单,307,Temporary Redirect,订单服务测试组 4-2,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270148224,4,创建支付,307,Temporary Redirect,支付服务测试组 5-2,,true,,175,208,1,2,http://localhost:30080/api/payments,4,0,0
+1749270148229,4,创建支付,307,Temporary Redirect,支付服务测试组 5-2,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270148229,4,创建订单,307,Temporary Redirect,订单服务测试组 4-2,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270148285,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-3,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270148290,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-3,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270148294,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-3,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270148297,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-3,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270148302,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-3,,true,,172,205,1,1,http://localhost:30080/api/carts,8,0,1
+1749270148342,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,1,http://localhost:30080/api/users/9,5,0,1
+1749270148348,5,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270148348,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270148353,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270148353,5,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270148358,6,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/2,6,0,1
+1749270148358,6,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,1
+1749270148364,4,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270148364,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270148369,5,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,0
+1749270148369,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,0
+1749270148375,4,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270148375,4,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270148379,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,1
+1749270148379,5,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,1
+1749270148384,5,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270148384,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,1
+1749270148390,5,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270148390,5,获取用户信息,200,OK,用户服务测试组 1-3,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270148395,4,获取商品信息,200,OK,商品服务测试组 2-3,text,true,,206,158,1,1,http://localhost:30080/api/products/7,4,0,0
+1749270148455,6,创建订单,307,Temporary Redirect,订单服务测试组 4-3,,true,,173,220,1,3,http://localhost:30080/api/orders,6,0,0
+1749270148455,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-4,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,0
+1749270148459,4,创建支付,307,Temporary Redirect,支付服务测试组 5-3,,true,,175,207,1,3,http://localhost:30080/api/payments,4,0,1
+1749270148462,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-4,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270148461,6,创建订单,307,Temporary Redirect,订单服务测试组 4-3,,true,,173,221,1,3,http://localhost:30080/api/orders,6,0,1
+1749270148464,5,创建支付,307,Temporary Redirect,支付服务测试组 5-3,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270148467,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-4,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270148467,4,创建订单,307,Temporary Redirect,订单服务测试组 4-3,,true,,173,220,1,3,http://localhost:30080/api/orders,4,0,0
+1749270148469,4,创建支付,307,Temporary Redirect,支付服务测试组 5-3,,true,,175,207,1,3,http://localhost:30080/api/payments,4,0,1
+1749270148471,5,创建订单,307,Temporary Redirect,订单服务测试组 4-3,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,1
+1749270148471,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-4,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,0
+1749270148474,4,创建支付,307,Temporary Redirect,支付服务测试组 5-3,,true,,175,207,1,3,http://localhost:30080/api/payments,4,0,0
+1749270148476,5,创建订单,307,Temporary Redirect,订单服务测试组 4-3,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,1
+1749270148476,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-4,,true,,172,206,1,3,http://localhost:30080/api/carts,5,0,1
+1749270148478,4,创建支付,307,Temporary Redirect,支付服务测试组 5-3,,true,,175,207,1,1,http://localhost:30080/api/payments,4,0,1
+1749270148544,6,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/9,6,0,1
+1749270148548,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270148550,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270148552,6,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/8,6,0,1
+1749270148555,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270148559,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,1
+1749270148560,3,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/4,3,0,0
+1749270148564,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270148564,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270148569,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270148569,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270148574,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,1
+1749270148574,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270148579,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270148579,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270148584,5,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270148584,5,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,0
+1749270148590,4,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270148590,4,获取用户信息,200,OK,用户服务测试组 1-4,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270148595,3,获取商品信息,200,OK,商品服务测试组 2-4,text,true,,206,158,1,1,http://localhost:30080/api/products/4,3,0,0
+1749270148621,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-5,,true,,172,205,1,1,http://localhost:30080/api/carts,6,0,2
+1749270148627,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-5,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270148633,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-5,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270148637,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-5,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270148642,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-5,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270148708,7,创建支付,307,Temporary Redirect,支付服务测试组 5-4,,true,,175,207,1,2,http://localhost:30080/api/payments,7,0,2
+1749270148708,7,创建订单,307,Temporary Redirect,订单服务测试组 4-4,,true,,173,221,1,2,http://localhost:30080/api/orders,7,0,2
+1749270148716,5,创建支付,307,Temporary Redirect,支付服务测试组 5-4,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270148716,5,创建订单,307,Temporary Redirect,订单服务测试组 4-4,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,0
+1749270148721,6,创建订单,307,Temporary Redirect,订单服务测试组 4-4,,true,,173,221,1,2,http://localhost:30080/api/orders,6,0,1
+1749270148721,7,创建支付,307,Temporary Redirect,支付服务测试组 5-4,,true,,175,208,1,2,http://localhost:30080/api/payments,7,0,1
+1749270148728,5,创建支付,307,Temporary Redirect,支付服务测试组 5-4,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270148728,5,创建订单,307,Temporary Redirect,订单服务测试组 4-4,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,1
+1749270148735,6,创建支付,307,Temporary Redirect,支付服务测试组 5-4,,true,,175,207,1,3,http://localhost:30080/api/payments,6,0,1
+1749270148735,6,创建订单,307,Temporary Redirect,订单服务测试组 4-4,,true,,173,220,1,3,http://localhost:30080/api/orders,6,0,1
+1749270148739,6,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,1,http://localhost:30080/api/users/6,6,0,0
+1749270148745,5,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270148746,5,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270148751,5,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270148751,5,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270148756,4,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270148756,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270148761,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270148761,5,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270148766,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270148766,5,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270148771,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270148771,4,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270148775,4,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270148775,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270148779,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,1
+1749270148779,4,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270148784,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-6,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270148783,5,获取用户信息,200,OK,用户服务测试组 1-5,text,true,,206,155,1,3,http://localhost:30080/api/users/9,5,0,0
+1749270148783,6,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/7,6,0,0
+1749270148789,4,获取商品信息,200,OK,商品服务测试组 2-5,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270148788,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-6,,true,,172,206,1,2,http://localhost:30080/api/carts,5,0,1
+1749270148793,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-6,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270148797,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-6,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270148802,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-6,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270148943,9,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,3,http://localhost:30080/api/users/3,9,0,1
+1749270148947,7,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,4,http://localhost:30080/api/products/7,7,0,1
+1749270148953,6,创建订单,307,Temporary Redirect,订单服务测试组 4-5,,true,,173,220,1,5,http://localhost:30080/api/orders,6,0,1
+1749270148954,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-7,,true,,172,205,1,5,http://localhost:30080/api/carts,6,0,0
+1749270148953,9,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,156,1,5,http://localhost:30080/api/users/10,9,0,1
+1749270148954,8,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,5,http://localhost:30080/api/products/8,8,0,1
+1749270148956,9,创建支付,307,Temporary Redirect,支付服务测试组 5-5,,true,,175,207,1,5,http://localhost:30080/api/payments,9,0,0
+1749270148960,9,创建订单,307,Temporary Redirect,订单服务测试组 4-5,,true,,173,221,1,5,http://localhost:30080/api/orders,9,0,2
+1749270148960,10,添加购物车,307,Temporary Redirect,购物车服务测试组 3-7,,true,,172,206,1,5,http://localhost:30080/api/carts,10,0,2
+1749270148963,7,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,5,http://localhost:30080/api/products/9,7,0,0
+1749270148963,9,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,5,http://localhost:30080/api/users/4,9,0,0
+1749270148965,8,创建支付,307,Temporary Redirect,支付服务测试组 5-5,,true,,175,207,1,5,http://localhost:30080/api/payments,8,0,0
+1749270148970,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-7,,true,,172,205,1,5,http://localhost:30080/api/carts,8,0,1
+1749270148969,9,创建订单,307,Temporary Redirect,订单服务测试组 4-5,,true,,173,220,1,5,http://localhost:30080/api/orders,9,0,1
+1749270148972,7,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,156,1,5,http://localhost:30080/api/users/10,7,0,0
+1749270148970,9,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,5,http://localhost:30080/api/products/5,9,0,1
+1749270148973,7,创建支付,307,Temporary Redirect,支付服务测试组 5-5,,true,,175,207,1,5,http://localhost:30080/api/payments,7,0,0
+1749270148978,8,创建订单,307,Temporary Redirect,订单服务测试组 4-5,,true,,173,220,1,5,http://localhost:30080/api/orders,8,0,1
+1749270148979,7,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,5,http://localhost:30080/api/users/9,7,0,1
+1749270148980,6,创建支付,307,Temporary Redirect,支付服务测试组 5-5,,true,,175,207,1,5,http://localhost:30080/api/payments,6,0,0
+1749270148978,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-7,,true,,172,205,1,5,http://localhost:30080/api/carts,8,0,1
+1749270148979,8,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,5,http://localhost:30080/api/products/7,8,0,1
+1749270148986,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-7,,true,,172,206,1,5,http://localhost:30080/api/carts,8,0,1
+1749270148986,8,创建支付,307,Temporary Redirect,支付服务测试组 5-5,,true,,175,207,1,5,http://localhost:30080/api/payments,8,0,1
+1749270148986,8,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,5,http://localhost:30080/api/users/2,8,0,1
+1749270148987,8,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,3,http://localhost:30080/api/products/8,8,0,0
+1749270148986,9,创建订单,307,Temporary Redirect,订单服务测试组 4-5,,true,,173,220,1,3,http://localhost:30080/api/orders,9,0,0
+1749270148995,5,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270148995,5,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270149000,7,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,2,http://localhost:30080/api/users/4,7,0,1
+1749270149000,7,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,2,http://localhost:30080/api/products/7,7,0,1
+1749270149007,4,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270149007,4,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270149011,5,获取用户信息,200,OK,用户服务测试组 1-6,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,1
+1749270149011,5,获取商品信息,200,OK,商品服务测试组 2-6,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,1
+1749270149123,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-8,,true,,172,205,1,1,http://localhost:30080/api/carts,8,0,1
+1749270149132,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-8,,true,,172,206,1,1,http://localhost:30080/api/carts,6,0,1
+1749270149139,5,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,1
+1749270149138,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-8,,true,,172,205,1,2,http://localhost:30080/api/carts,6,0,1
+1749270149144,6,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,3,http://localhost:30080/api/users/7,5,0,1
+1749270149144,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-8,,true,,172,206,1,3,http://localhost:30080/api/carts,6,0,1
+1749270149150,5,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,3,http://localhost:30080/api/users/7,5,0,1
+1749270149150,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-8,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,1
+1749270149150,6,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,3,http://localhost:30080/api/products/3,6,0,1
+1749270149156,6,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,0
+1749270149156,6,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270149162,5,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,1
+1749270149162,5,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,1
+1749270149167,5,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270149167,5,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270149173,4,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270149173,4,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270149178,4,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270149178,4,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270149183,5,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270149183,5,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270149188,5,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270149188,5,获取用户信息,200,OK,用户服务测试组 1-7,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270149193,6,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,1,http://localhost:30080/api/products/2,6,0,1
+1749270149199,4,获取商品信息,200,OK,商品服务测试组 2-7,text,true,,206,158,1,1,http://localhost:30080/api/products/8,4,0,0
+1749270149206,5,创建订单,307,Temporary Redirect,订单服务测试组 4-6,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,1
+1749270149210,5,创建支付,307,Temporary Redirect,支付服务测试组 5-6,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,0
+1749270149211,5,创建订单,307,Temporary Redirect,订单服务测试组 4-6,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,0
+1749270149216,4,创建订单,307,Temporary Redirect,订单服务测试组 4-6,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270149215,5,创建支付,307,Temporary Redirect,支付服务测试组 5-6,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270149220,5,创建订单,307,Temporary Redirect,订单服务测试组 4-6,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,1
+1749270149220,5,创建支付,307,Temporary Redirect,支付服务测试组 5-6,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270149225,4,创建支付,307,Temporary Redirect,支付服务测试组 5-6,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270149225,4,创建订单,307,Temporary Redirect,订单服务测试组 4-6,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270149229,4,创建支付,307,Temporary Redirect,支付服务测试组 5-6,,true,,175,207,1,1,http://localhost:30080/api/payments,4,0,0
+1749270149291,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-9,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270149297,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-9,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270149303,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-9,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270149308,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-9,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270149313,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-9,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270149342,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,1,http://localhost:30080/api/users/1,5,0,0
+1749270149348,4,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270149348,4,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,1
+1749270149353,7,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/7,6,0,0
+1749270149353,7,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270149360,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,1
+1749270149360,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270149365,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270149365,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,1
+1749270149371,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,1
+1749270149371,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270149377,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270149377,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270149382,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,0
+1749270149382,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,0
+1749270149387,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270149387,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,0
+1749270149392,5,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,1
+1749270149392,5,获取用户信息,200,OK,用户服务测试组 1-8,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270149397,4,获取商品信息,200,OK,商品服务测试组 2-8,text,true,,206,158,1,1,http://localhost:30080/api/products/7,4,0,1
+1749270149456,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-10,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,1
+1749270149459,6,创建订单,307,Temporary Redirect,订单服务测试组 4-7,,true,,173,221,1,3,http://localhost:30080/api/orders,6,0,1
+1749270149459,8,创建支付,307,Temporary Redirect,支付服务测试组 5-7,,true,,175,207,1,3,http://localhost:30080/api/payments,8,0,0
+1749270149462,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-10,,true,,172,205,1,3,http://localhost:30080/api/carts,7,0,1
+1749270149466,6,创建订单,307,Temporary Redirect,订单服务测试组 4-7,,true,,173,220,1,3,http://localhost:30080/api/orders,6,0,2
+1749270149467,5,创建支付,307,Temporary Redirect,支付服务测试组 5-7,,true,,175,208,1,3,http://localhost:30080/api/payments,5,0,1
+1749270149470,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-10,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,1
+1749270149472,7,创建订单,307,Temporary Redirect,订单服务测试组 4-7,,true,,173,221,1,3,http://localhost:30080/api/orders,7,0,1
+1749270149472,7,创建支付,307,Temporary Redirect,支付服务测试组 5-7,,true,,175,207,1,3,http://localhost:30080/api/payments,7,0,1
+1749270149476,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-10,,true,,172,205,1,3,http://localhost:30080/api/carts,7,0,1
+1749270149479,6,创建支付,307,Temporary Redirect,支付服务测试组 5-7,,true,,175,207,1,3,http://localhost:30080/api/payments,6,0,0
+1749270149479,6,创建订单,307,Temporary Redirect,订单服务测试组 4-7,,true,,173,220,1,3,http://localhost:30080/api/orders,6,0,0
+1749270149483,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-10,,true,,172,206,1,3,http://localhost:30080/api/carts,6,0,0
+1749270149485,5,创建支付,307,Temporary Redirect,支付服务测试组 5-7,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,0
+1749270149485,5,创建订单,307,Temporary Redirect,订单服务测试组 4-7,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,0
+1749270149546,3,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270149543,6,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,1
+1749270149550,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270149550,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270149555,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270149555,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270149559,5,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,1
+1749270149559,5,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,1
+1749270149564,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270149564,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,1
+1749270149569,3,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270149569,3,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/5,3,0,0
+1749270149573,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270149573,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270149577,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270149577,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270149581,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270149581,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270149586,4,获取用户信息,200,OK,用户服务测试组 1-9,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270149586,4,获取商品信息,200,OK,商品服务测试组 2-9,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270149624,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-11,,true,,172,206,1,1,http://localhost:30080/api/carts,6,0,2
+1749270149630,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-11,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270149635,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-11,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270149639,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-11,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,0
+1749270149644,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-11,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270149707,7,创建订单,307,Temporary Redirect,订单服务测试组 4-8,,true,,173,220,1,2,http://localhost:30080/api/orders,7,0,1
+1749270149708,6,创建支付,307,Temporary Redirect,支付服务测试组 5-8,,true,,175,207,1,2,http://localhost:30080/api/payments,6,0,1
+1749270149714,5,创建支付,307,Temporary Redirect,支付服务测试组 5-8,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270149714,5,创建订单,307,Temporary Redirect,订单服务测试组 4-8,,true,,173,221,1,2,http://localhost:30080/api/orders,5,0,1
+1749270149720,5,创建订单,307,Temporary Redirect,订单服务测试组 4-8,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,1
+1749270149720,5,创建支付,307,Temporary Redirect,支付服务测试组 5-8,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270149726,5,创建订单,307,Temporary Redirect,订单服务测试组 4-8,,true,,173,221,1,2,http://localhost:30080/api/orders,5,0,1
+1749270149726,5,创建支付,307,Temporary Redirect,支付服务测试组 5-8,,true,,175,208,1,2,http://localhost:30080/api/payments,5,0,1
+1749270149732,4,创建支付,307,Temporary Redirect,支付服务测试组 5-8,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270149732,4,创建订单,307,Temporary Redirect,订单服务测试组 4-8,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270149744,5,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270149747,4,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270149749,4,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270149751,4,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,1
+1749270149754,4,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270149756,4,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270149758,4,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270149760,4,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270149763,3,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/6,3,0,0
+1749270149764,4,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270149766,4,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,1
+1749270149768,3,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/1,3,0,0
+1749270149770,3,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/9,3,0,0
+1749270149772,3,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270149774,3,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/5,3,0,0
+1749270149775,4,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,1
+1749270149778,3,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270149779,5,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,0
+1749270149781,3,获取用户信息,200,OK,用户服务测试组 1-10,text,true,,206,155,1,2,http://localhost:30080/api/users/4,3,0,0
+1749270149784,3,获取商品信息,200,OK,商品服务测试组 2-10,text,true,,206,158,1,1,http://localhost:30080/api/products/1,3,0,0
+1749270149788,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-12,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,1
+1749270149793,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-12,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270149797,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-12,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270149800,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-12,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270149805,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-12,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270149940,7,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,2,http://localhost:30080/api/users/7,7,0,1
+1749270149946,6,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,2,http://localhost:30080/api/products/2,6,0,1
+1749270149948,7,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,3,http://localhost:30080/api/users/3,6,0,0
+1749270149952,5,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,4,http://localhost:30080/api/products/6,5,0,1
+1749270149955,6,创建订单,307,Temporary Redirect,订单服务测试组 4-9,,true,,173,220,1,5,http://localhost:30080/api/orders,6,0,1
+1749270149955,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-13,,true,,172,206,1,5,http://localhost:30080/api/carts,6,0,0
+1749270149955,7,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,5,http://localhost:30080/api/users/9,7,0,0
+1749270149958,5,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,5,http://localhost:30080/api/products/5,5,0,0
+1749270149961,7,创建订单,307,Temporary Redirect,订单服务测试组 4-9,,true,,173,220,1,5,http://localhost:30080/api/orders,7,0,1
+1749270149962,6,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,5,http://localhost:30080/api/users/3,5,0,0
+1749270149961,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-13,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,1
+1749270149962,6,创建支付,307,Temporary Redirect,支付服务测试组 5-9,,true,,175,207,1,5,http://localhost:30080/api/payments,6,0,0
+1749270149964,6,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,5,http://localhost:30080/api/products/1,6,0,0
+1749270149968,6,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,5,http://localhost:30080/api/users/3,5,0,1
+1749270149968,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-13,,true,,172,205,1,5,http://localhost:30080/api/carts,6,0,1
+1749270149968,7,创建支付,307,Temporary Redirect,支付服务测试组 5-9,,true,,175,207,1,5,http://localhost:30080/api/payments,7,0,1
+1749270149968,7,创建订单,307,Temporary Redirect,订单服务测试组 4-9,,true,,173,222,1,5,http://localhost:30080/api/orders,7,0,1
+1749270149971,5,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,5,http://localhost:30080/api/products/8,5,0,0
+1749270149974,5,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,5,http://localhost:30080/api/users/7,5,0,0
+1749270149975,5,创建订单,307,Temporary Redirect,订单服务测试组 4-9,,true,,173,221,1,5,http://localhost:30080/api/orders,5,0,1
+1749270149974,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-13,,true,,172,206,1,5,http://localhost:30080/api/carts,6,0,0
+1749270149975,7,创建支付,307,Temporary Redirect,支付服务测试组 5-9,,true,,175,208,1,5,http://localhost:30080/api/payments,7,0,1
+1749270149977,5,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,5,http://localhost:30080/api/products/2,5,0,0
+1749270149980,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-13,,true,,172,205,1,5,http://localhost:30080/api/carts,5,0,1
+1749270149980,5,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,5,http://localhost:30080/api/users/8,5,0,0
+1749270149980,5,创建订单,307,Temporary Redirect,订单服务测试组 4-9,,true,,173,220,1,5,http://localhost:30080/api/orders,5,0,1
+1749270149982,6,创建支付,307,Temporary Redirect,支付服务测试组 5-9,,true,,175,207,1,3,http://localhost:30080/api/payments,6,0,0
+1749270149982,6,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,3,http://localhost:30080/api/products/2,6,0,1
+1749270149985,4,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,3,http://localhost:30080/api/users/3,4,0,1
+1749270149988,5,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,3,http://localhost:30080/api/products/4,5,0,1
+1749270149988,5,创建支付,307,Temporary Redirect,支付服务测试组 5-9,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270149989,5,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270149993,6,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,158,1,2,http://localhost:30080/api/products/8,6,0,1
+1749270149995,4,获取用户信息,200,OK,用户服务测试组 1-11,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270149999,5,获取商品信息,200,OK,商品服务测试组 2-11,text,true,,206,159,1,1,http://localhost:30080/api/products/10,5,0,1
+1749270150126,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-14,,true,,172,205,1,1,http://localhost:30080/api/carts,6,0,1
+1749270150132,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-14,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270150138,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-14,,true,,172,205,1,2,http://localhost:30080/api/carts,5,0,0
+1749270150139,4,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270150143,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-14,,true,,172,205,1,3,http://localhost:30080/api/carts,8,0,1
+1749270150144,7,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,3,http://localhost:30080/api/users/4,7,0,0
+1749270150146,6,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,3,http://localhost:30080/api/products/2,6,0,1
+1749270150151,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-14,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,1
+1749270150151,6,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/1,6,0,1
+1749270150153,5,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,0
+1749270150159,5,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,1
+1749270150157,7,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/5,7,0,1
+1749270150164,6,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/1,6,0,1
+1749270150164,7,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,2,http://localhost:30080/api/products/3,7,0,1
+1749270150171,5,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,0
+1749270150171,6,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,159,1,2,http://localhost:30080/api/products/10,6,0,0
+1749270150176,6,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/4,6,0,1
+1749270150178,4,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270150183,4,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270150183,5,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270150188,5,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270150188,5,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270150193,4,获取用户信息,200,OK,用户服务测试组 1-12,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270150193,4,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270150198,5,获取商品信息,200,OK,商品服务测试组 2-12,text,true,,206,159,1,1,http://localhost:30080/api/products/10,5,0,0
+1749270150206,4,创建支付,307,Temporary Redirect,支付服务测试组 5-10,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270150206,5,创建订单,307,Temporary Redirect,订单服务测试组 4-10,,true,,173,221,1,2,http://localhost:30080/api/orders,4,0,0
+1749270150211,4,创建支付,307,Temporary Redirect,支付服务测试组 5-10,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270150211,4,创建订单,307,Temporary Redirect,订单服务测试组 4-10,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270150215,4,创建订单,307,Temporary Redirect,订单服务测试组 4-10,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270150215,4,创建支付,307,Temporary Redirect,支付服务测试组 5-10,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270150219,4,创建订单,307,Temporary Redirect,订单服务测试组 4-10,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270150219,4,创建支付,307,Temporary Redirect,支付服务测试组 5-10,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270150223,4,创建支付,307,Temporary Redirect,支付服务测试组 5-10,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270150223,4,创建订单,307,Temporary Redirect,订单服务测试组 4-10,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270150292,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-15,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,1
+1749270150297,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-15,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270150301,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-15,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270150305,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-15,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270150309,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-15,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,0
+1749270150342,6,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/2,6,0,1
+1749270150345,4,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270150348,4,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270150349,4,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270150352,5,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,1
+1749270150353,4,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,1
+1749270150357,5,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270150357,5,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,1
+1749270150362,6,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,156,1,2,http://localhost:30080/api/users/10,6,0,1
+1749270150362,6,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/1,6,0,1
+1749270150368,4,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270150368,4,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,1
+1749270150372,5,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,1
+1749270150372,5,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,1
+1749270150377,4,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270150377,4,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270150381,5,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270150381,5,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270150386,4,获取商品信息,200,OK,商品服务测试组 2-13,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270150386,4,获取用户信息,200,OK,用户服务测试组 1-13,text,true,,206,155,1,1,http://localhost:30080/api/users/3,4,0,0
+1749270150455,7,创建支付,307,Temporary Redirect,支付服务测试组 5-11,,true,,175,207,1,3,http://localhost:30080/api/payments,7,0,2
+1749270150455,7,创建订单,307,Temporary Redirect,订单服务测试组 4-11,,true,,173,220,1,3,http://localhost:30080/api/orders,7,0,2
+1749270150458,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-16,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,0
+1749270150462,5,创建订单,307,Temporary Redirect,订单服务测试组 4-11,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,1
+1749270150462,5,创建支付,307,Temporary Redirect,支付服务测试组 5-11,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270150463,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-16,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,0
+1749270150467,6,创建订单,307,Temporary Redirect,订单服务测试组 4-11,,true,,173,220,1,3,http://localhost:30080/api/orders,6,0,1
+1749270150467,6,创建支付,307,Temporary Redirect,支付服务测试组 5-11,,true,,175,207,1,3,http://localhost:30080/api/payments,6,0,1
+1749270150468,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-16,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,1
+1749270150473,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-16,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270150473,4,创建支付,307,Temporary Redirect,支付服务测试组 5-11,,true,,175,207,1,3,http://localhost:30080/api/payments,4,0,0
+1749270150473,4,创建订单,307,Temporary Redirect,订单服务测试组 4-11,,true,,173,221,1,3,http://localhost:30080/api/orders,4,0,0
+1749270150477,5,创建订单,307,Temporary Redirect,订单服务测试组 4-11,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,1
+1749270150477,5,创建支付,307,Temporary Redirect,支付服务测试组 5-11,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270150477,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-16,,true,,172,205,1,2,http://localhost:30080/api/carts,5,0,1
+1749270150542,6,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/4,6,0,1
+1749270150545,4,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270150548,4,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270150549,4,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,1
+1749270150552,4,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/4,3,0,0
+1749270150553,4,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270150556,4,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270150557,5,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270150560,5,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,1
+1749270150562,4,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270150565,3,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/2,3,0,0
+1749270150566,4,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270150568,5,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,1
+1749270150570,3,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,159,1,2,http://localhost:30080/api/products/10,3,0,0
+1749270150573,3,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,156,1,2,http://localhost:30080/api/users/10,3,0,0
+1749270150573,3,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270150577,3,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270150577,3,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,156,1,2,http://localhost:30080/api/users/10,3,0,0
+1749270150581,3,获取用户信息,200,OK,用户服务测试组 1-14,text,true,,206,155,1,2,http://localhost:30080/api/users/8,3,0,0
+1749270150581,3,获取商品信息,200,OK,商品服务测试组 2-14,text,true,,206,158,1,2,http://localhost:30080/api/products/1,3,0,0
+1749270150628,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-17,,true,,172,206,1,1,http://localhost:30080/api/carts,6,0,1
+1749270150634,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-17,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270150639,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-17,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270150643,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-17,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,1
+1749270150647,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-17,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270150710,6,创建订单,307,Temporary Redirect,订单服务测试组 4-12,,true,,173,220,1,2,http://localhost:30080/api/orders,6,0,1
+1749270150710,7,创建支付,307,Temporary Redirect,支付服务测试组 5-12,,true,,175,207,1,2,http://localhost:30080/api/payments,7,0,1
+1749270150717,4,创建支付,307,Temporary Redirect,支付服务测试组 5-12,,true,,175,208,1,2,http://localhost:30080/api/payments,4,0,0
+1749270150717,4,创建订单,307,Temporary Redirect,订单服务测试组 4-12,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270150721,4,创建支付,307,Temporary Redirect,支付服务测试组 5-12,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270150721,4,创建订单,307,Temporary Redirect,订单服务测试组 4-12,,true,,173,221,1,2,http://localhost:30080/api/orders,4,0,1
+1749270150725,4,创建订单,307,Temporary Redirect,订单服务测试组 4-12,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,1
+1749270150725,4,创建支付,307,Temporary Redirect,支付服务测试组 5-12,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270150729,4,创建支付,307,Temporary Redirect,支付服务测试组 5-12,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270150729,4,创建订单,307,Temporary Redirect,订单服务测试组 4-12,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,1
+1749270150744,5,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270150746,3,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270150749,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270150750,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270150753,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270150754,3,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/3,3,0,0
+1749270150757,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270150757,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270150761,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270150761,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,1
+1749270150765,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270150765,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270150769,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270150769,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270150773,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270150773,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270150777,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270150777,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270150781,4,获取商品信息,200,OK,商品服务测试组 2-15,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,1
+1749270150781,4,获取用户信息,200,OK,用户服务测试组 1-15,text,true,,206,155,1,1,http://localhost:30080/api/users/1,4,0,1
+1749270150795,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-18,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270150799,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-18,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,1
+1749270150804,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-18,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270150807,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-18,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270150810,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-18,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270150939,6,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,156,1,1,http://localhost:30080/api/users/10,6,0,1
+1749270150946,4,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270150948,4,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,3,http://localhost:30080/api/products/3,4,0,1
+1749270150950,4,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,3,http://localhost:30080/api/users/1,4,0,1
+1749270150952,5,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,159,1,5,http://localhost:30080/api/products/10,5,0,1
+1749270150953,5,创建订单,307,Temporary Redirect,订单服务测试组 4-13,,true,,173,221,1,5,http://localhost:30080/api/orders,5,0,0
+1749270150954,4,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,5,http://localhost:30080/api/users/8,4,0,1
+1749270150956,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-19,,true,,172,205,1,5,http://localhost:30080/api/carts,8,0,1
+1749270150956,8,创建支付,307,Temporary Redirect,支付服务测试组 5-13,,true,,175,207,1,5,http://localhost:30080/api/payments,8,0,1
+1749270150958,7,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,159,1,5,http://localhost:30080/api/products/10,7,0,0
+1749270150958,8,创建订单,307,Temporary Redirect,订单服务测试组 4-13,,true,,173,221,1,5,http://localhost:30080/api/orders,8,0,0
+1749270150959,7,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,5,http://localhost:30080/api/users/3,7,0,0
+1749270150964,8,创建支付,307,Temporary Redirect,支付服务测试组 5-13,,true,,175,207,1,5,http://localhost:30080/api/payments,8,0,1
+1749270150964,8,添加购物车,307,Temporary Redirect,购物车服务测试组 3-19,,true,,172,205,1,5,http://localhost:30080/api/carts,8,0,1
+1749270150966,6,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,5,http://localhost:30080/api/users/6,6,0,0
+1749270150966,6,创建订单,307,Temporary Redirect,订单服务测试组 4-13,,true,,173,220,1,5,http://localhost:30080/api/orders,6,0,0
+1749270150966,6,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,5,http://localhost:30080/api/products/1,6,0,0
+1749270150972,5,创建支付,307,Temporary Redirect,支付服务测试组 5-13,,true,,175,208,1,5,http://localhost:30080/api/payments,5,0,0
+1749270150972,6,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,5,http://localhost:30080/api/users/7,6,0,0
+1749270150972,6,创建订单,307,Temporary Redirect,订单服务测试组 4-13,,true,,173,220,1,5,http://localhost:30080/api/orders,6,0,1
+1749270150972,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-19,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,0
+1749270150973,7,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,5,http://localhost:30080/api/products/9,7,0,0
+1749270150978,6,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,5,http://localhost:30080/api/users/6,6,0,0
+1749270150978,6,创建支付,307,Temporary Redirect,支付服务测试组 5-13,,true,,175,207,1,5,http://localhost:30080/api/payments,6,0,0
+1749270150979,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-19,,true,,172,205,1,5,http://localhost:30080/api/carts,6,0,0
+1749270150978,7,创建订单,307,Temporary Redirect,订单服务测试组 4-13,,true,,173,221,1,5,http://localhost:30080/api/orders,7,0,1
+1749270150980,6,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,4,http://localhost:30080/api/products/8,6,0,0
+1749270150985,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-19,,true,,172,205,1,4,http://localhost:30080/api/carts,6,0,0
+1749270150984,8,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,3,http://localhost:30080/api/users/2,8,0,1
+1749270150984,8,创建支付,307,Temporary Redirect,支付服务测试组 5-13,,true,,175,207,1,3,http://localhost:30080/api/payments,8,0,1
+1749270150986,7,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,2,http://localhost:30080/api/products/9,7,0,0
+1749270150992,6,获取用户信息,200,OK,用户服务测试组 1-16,text,true,,206,155,1,2,http://localhost:30080/api/users/3,6,0,1
+1749270150994,4,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,1,http://localhost:30080/api/products/8,4,0,0
+1749270150998,5,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,159,1,1,http://localhost:30080/api/products/10,5,0,1
+1749270151003,4,获取商品信息,200,OK,商品服务测试组 2-16,text,true,,206,158,1,1,http://localhost:30080/api/products/3,4,0,0
+1749270151124,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-20,,true,,172,205,1,1,http://localhost:30080/api/carts,7,0,2
+1749270151131,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-20,,true,,172,206,1,1,http://localhost:30080/api/carts,5,0,1
+1749270151136,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-20,,true,,172,205,1,2,http://localhost:30080/api/carts,4,0,0
+1749270151136,5,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270151140,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-20,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270151141,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,3,http://localhost:30080/api/users/1,4,0,0
+1749270151144,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-20,,true,,172,206,1,3,http://localhost:30080/api/carts,4,0,1
+1749270151144,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,3,http://localhost:30080/api/products/7,4,0,0
+1749270151145,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270151148,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,1
+1749270151149,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270151152,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270151153,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270151156,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270151157,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270151160,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270151161,3,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/5,3,0,0
+1749270151164,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270151164,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270151168,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270151168,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270151172,4,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270151172,4,获取用户信息,200,OK,用户服务测试组 1-17,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270151176,3,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,1,http://localhost:30080/api/products/5,3,0,0
+1749270151179,3,获取商品信息,200,OK,商品服务测试组 2-17,text,true,,206,158,1,1,http://localhost:30080/api/products/8,3,0,0
+1749270151204,4,创建订单,307,Temporary Redirect,订单服务测试组 4-14,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,1
+1749270151206,4,创建支付,307,Temporary Redirect,支付服务测试组 5-14,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270151208,4,创建订单,307,Temporary Redirect,订单服务测试组 4-14,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,1
+1749270151210,5,创建支付,307,Temporary Redirect,支付服务测试组 5-14,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270151212,3,创建订单,307,Temporary Redirect,订单服务测试组 4-14,,true,,173,220,1,2,http://localhost:30080/api/orders,3,0,0
+1749270151215,3,创建支付,307,Temporary Redirect,支付服务测试组 5-14,,true,,175,207,1,2,http://localhost:30080/api/payments,3,0,0
+1749270151215,3,创建订单,307,Temporary Redirect,订单服务测试组 4-14,,true,,173,220,1,2,http://localhost:30080/api/orders,3,0,0
+1749270151218,3,创建订单,307,Temporary Redirect,订单服务测试组 4-14,,true,,173,220,1,2,http://localhost:30080/api/orders,3,0,1
+1749270151218,4,创建支付,307,Temporary Redirect,支付服务测试组 5-14,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270151222,3,创建支付,307,Temporary Redirect,支付服务测试组 5-14,,true,,175,207,1,1,http://localhost:30080/api/payments,3,0,0
+1749270151295,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-21,,true,,172,206,1,1,http://localhost:30080/api/carts,5,0,1
+1749270151300,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-21,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,1
+1749270151305,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-21,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270151309,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-21,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270151313,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-21,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270151343,5,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,0
+1749270151344,4,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270151348,6,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,2,http://localhost:30080/api/users/2,6,0,0
+1749270151348,6,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270151354,4,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270151354,4,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270151358,4,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270151358,4,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,1
+1749270151362,4,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270151362,5,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,1
+1749270151366,3,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,2,http://localhost:30080/api/users/8,3,0,0
+1749270151367,3,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/9,3,0,0
+1749270151370,4,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270151369,5,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270151374,3,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270151374,3,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,2,http://localhost:30080/api/users/6,3,0,0
+1749270151377,4,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270151377,4,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270151381,4,获取商品信息,200,OK,商品服务测试组 2-18,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270151381,4,获取用户信息,200,OK,用户服务测试组 1-18,text,true,,206,155,1,1,http://localhost:30080/api/users/1,4,0,0
+1749270151458,7,创建订单,307,Temporary Redirect,订单服务测试组 4-15,,true,,173,220,1,3,http://localhost:30080/api/orders,7,0,1
+1749270151458,7,创建支付,307,Temporary Redirect,支付服务测试组 5-15,,true,,175,207,1,3,http://localhost:30080/api/payments,7,0,1
+1749270151460,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-22,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,1
+1749270151465,5,创建订单,307,Temporary Redirect,订单服务测试组 4-15,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,0
+1749270151465,5,创建支付,307,Temporary Redirect,支付服务测试组 5-15,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,0
+1749270151466,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-22,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270151470,4,创建订单,307,Temporary Redirect,订单服务测试组 4-15,,true,,173,220,1,3,http://localhost:30080/api/orders,4,0,0
+1749270151470,4,创建支付,307,Temporary Redirect,支付服务测试组 5-15,,true,,175,207,1,3,http://localhost:30080/api/payments,4,0,0
+1749270151471,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-22,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270151474,5,创建订单,307,Temporary Redirect,订单服务测试组 4-15,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,0
+1749270151474,5,创建支付,307,Temporary Redirect,支付服务测试组 5-15,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270151475,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-22,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,0
+1749270151479,5,创建订单,307,Temporary Redirect,订单服务测试组 4-15,,true,,173,220,1,3,http://localhost:30080/api/orders,5,0,1
+1749270151479,5,创建支付,307,Temporary Redirect,支付服务测试组 5-15,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270151479,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-22,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,1
+1749270151541,5,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,1,http://localhost:30080/api/users/7,5,0,0
+1749270151546,5,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270151548,4,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270151551,5,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270151552,5,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270151557,5,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,0
+1749270151556,6,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/1,6,0,1
+1749270151562,4,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270151562,4,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270151566,4,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270151566,4,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270151570,4,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270151570,4,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270151574,3,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/5,3,0,0
+1749270151574,3,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/6,3,0,0
+1749270151577,4,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,1
+1749270151577,4,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,1
+1749270151582,4,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270151582,4,获取用户信息,200,OK,用户服务测试组 1-19,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270151586,3,获取商品信息,200,OK,商品服务测试组 2-19,text,true,,206,158,1,1,http://localhost:30080/api/products/7,3,0,0
+1749270151633,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-23,,true,,172,205,1,1,http://localhost:30080/api/carts,6,0,1
+1749270151639,25,添加购物车,307,Temporary Redirect,购物车服务测试组 3-23,,true,,172,205,1,1,http://localhost:30080/api/carts,25,0,1
+1749270151664,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-23,,true,,172,205,1,1,http://localhost:30080/api/carts,6,0,1
+1749270151670,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-23,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270151674,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-23,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270151704,5,创建订单,307,Temporary Redirect,订单服务测试组 4-16,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,1
+1749270151707,5,创建支付,307,Temporary Redirect,支付服务测试组 5-16,,true,,175,208,1,2,http://localhost:30080/api/payments,5,0,1
+1749270151710,4,创建订单,307,Temporary Redirect,订单服务测试组 4-16,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270151712,4,创建支付,307,Temporary Redirect,支付服务测试组 5-16,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,0
+1749270151714,4,创建订单,307,Temporary Redirect,订单服务测试组 4-16,,true,,173,221,1,2,http://localhost:30080/api/orders,4,0,1
+1749270151716,4,创建支付,307,Temporary Redirect,支付服务测试组 5-16,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270151719,3,创建订单,307,Temporary Redirect,订单服务测试组 4-16,,true,,173,221,1,2,http://localhost:30080/api/orders,3,0,0
+1749270151720,4,创建支付,307,Temporary Redirect,支付服务测试组 5-16,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270151722,3,创建订单,307,Temporary Redirect,订单服务测试组 4-16,,true,,173,221,1,2,http://localhost:30080/api/orders,3,0,1
+1749270151724,6,创建支付,307,Temporary Redirect,支付服务测试组 5-16,,true,,175,207,1,1,http://localhost:30080/api/payments,6,0,1
+1749270151738,4,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,1,http://localhost:30080/api/users/5,4,0,0
+1749270151742,4,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,1,http://localhost:30080/api/users/6,3,0,1
+1749270151746,4,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270151746,4,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270151751,3,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/6,3,0,0
+1749270151750,5,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,1
+1749270151754,4,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,1
+1749270151755,4,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270151759,3,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/9,3,0,0
+1749270151759,3,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/6,3,0,0
+1749270151762,4,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270151762,4,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270151766,3,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/4,3,0,1
+1749270151766,4,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270151770,3,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270151769,4,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,1
+1749270151773,5,获取用户信息,200,OK,用户服务测试组 1-20,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270151773,5,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,0
+1749270151778,4,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,158,1,1,http://localhost:30080/api/products/7,4,0,1
+1749270151782,3,获取商品信息,200,OK,商品服务测试组 2-20,text,true,,206,159,1,1,http://localhost:30080/api/products/10,3,0,0
+1749270151793,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-24,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270151797,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-24,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270151800,2,添加购物车,307,Temporary Redirect,购物车服务测试组 3-24,,true,,172,206,1,1,http://localhost:30080/api/carts,2,0,0
+1749270151802,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-24,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,1
+1749270151805,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-24,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270151944,7,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,2,http://localhost:30080/api/users/4,7,0,1
+1749270151947,5,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270151951,5,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270151952,4,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,3,http://localhost:30080/api/products/1,4,0,0
+1749270151956,5,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,5,http://localhost:30080/api/products/2,5,0,0
+1749270151956,5,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,5,http://localhost:30080/api/users/6,5,0,0
+1749270151956,5,创建支付,307,Temporary Redirect,支付服务测试组 5-17,,true,,175,207,1,5,http://localhost:30080/api/payments,5,0,1
+1749270151958,6,创建订单,307,Temporary Redirect,订单服务测试组 4-17,,true,,173,220,1,5,http://localhost:30080/api/orders,6,0,0
+1749270151961,5,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,5,http://localhost:30080/api/users/5,5,0,1
+1749270151961,5,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,5,http://localhost:30080/api/products/2,5,0,0
+1749270151961,7,创建支付,307,Temporary Redirect,支付服务测试组 5-17,,true,,175,207,1,5,http://localhost:30080/api/payments,7,0,1
+1749270151961,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-25,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,0
+1749270151964,5,创建订单,307,Temporary Redirect,订单服务测试组 4-17,,true,,173,220,1,5,http://localhost:30080/api/orders,5,0,0
+1749270151966,6,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,5,http://localhost:30080/api/users/8,6,0,1
+1749270151966,7,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,5,http://localhost:30080/api/products/9,7,0,1
+1749270151969,5,创建订单,307,Temporary Redirect,订单服务测试组 4-17,,true,,173,220,1,5,http://localhost:30080/api/orders,5,0,0
+1749270151968,6,创建支付,307,Temporary Redirect,支付服务测试组 5-17,,true,,175,207,1,5,http://localhost:30080/api/payments,6,0,0
+1749270151968,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-25,,true,,172,205,1,5,http://localhost:30080/api/carts,7,0,0
+1749270151974,6,创建订单,307,Temporary Redirect,订单服务测试组 4-17,,true,,173,221,1,5,http://localhost:30080/api/orders,6,0,0
+1749270151974,6,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,5,http://localhost:30080/api/products/4,6,0,0
+1749270151974,6,创建支付,307,Temporary Redirect,支付服务测试组 5-17,,true,,175,207,1,5,http://localhost:30080/api/payments,6,0,1
+1749270151972,8,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,5,http://localhost:30080/api/users/2,8,0,1
+1749270151975,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-25,,true,,172,206,1,5,http://localhost:30080/api/carts,7,0,0
+1749270151980,6,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,159,1,5,http://localhost:30080/api/products/10,6,0,0
+1749270151980,6,创建支付,307,Temporary Redirect,支付服务测试组 5-17,,true,,175,207,1,5,http://localhost:30080/api/payments,6,0,0
+1749270151980,6,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,5,http://localhost:30080/api/users/1,6,0,0
+1749270151980,7,创建订单,307,Temporary Redirect,订单服务测试组 4-17,,true,,173,220,1,4,http://localhost:30080/api/orders,7,0,0
+1749270151982,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-25,,true,,172,205,1,4,http://localhost:30080/api/carts,5,0,0
+1749270151986,5,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,3,http://localhost:30080/api/users/9,5,0,0
+1749270151986,7,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,3,http://localhost:30080/api/products/8,7,0,0
+1749270151987,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-25,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,0
+1749270151991,6,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,2,http://localhost:30080/api/users/2,6,0,0
+1749270151993,5,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270151997,4,获取用户信息,200,OK,用户服务测试组 1-21,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270151998,3,获取商品信息,200,OK,商品服务测试组 2-21,text,true,,206,158,1,1,http://localhost:30080/api/products/6,3,0,0
+1749270152128,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-26,,true,,172,205,1,1,http://localhost:30080/api/carts,7,0,1
+1749270152135,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-26,,true,,172,206,1,1,http://localhost:30080/api/carts,7,0,2
+1749270152142,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-26,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,1
+1749270152143,5,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,3,http://localhost:30080/api/users/8,5,0,0
+1749270152147,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,3,http://localhost:30080/api/products/9,4,0,0
+1749270152147,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-26,,true,,172,205,1,3,http://localhost:30080/api/carts,5,0,1
+1749270152148,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,3,http://localhost:30080/api/users/2,4,0,0
+1749270152152,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,3,http://localhost:30080/api/products/5,4,0,0
+1749270152152,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-26,,true,,172,205,1,3,http://localhost:30080/api/carts,4,0,1
+1749270152153,3,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,156,1,3,http://localhost:30080/api/users/10,3,0,0
+1749270152157,3,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/1,3,0,0
+1749270152156,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270152161,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270152161,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270152165,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,1
+1749270152165,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,1
+1749270152169,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270152169,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270152173,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,1
+1749270152173,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270152177,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270152177,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270152181,4,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,1
+1749270152181,4,获取用户信息,200,OK,用户服务测试组 1-22,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270152185,3,获取商品信息,200,OK,商品服务测试组 2-22,text,true,,206,158,1,1,http://localhost:30080/api/products/2,3,0,0
+1749270152206,4,创建订单,307,Temporary Redirect,订单服务测试组 4-18,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270152209,9,创建支付,307,Temporary Redirect,支付服务测试组 5-18,,true,,175,207,1,2,http://localhost:30080/api/payments,9,0,1
+1749270152210,9,创建订单,307,Temporary Redirect,订单服务测试组 4-18,,true,,173,220,1,2,http://localhost:30080/api/orders,9,0,0
+1749270152218,5,创建支付,307,Temporary Redirect,支付服务测试组 5-18,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,0
+1749270152219,4,创建订单,307,Temporary Redirect,订单服务测试组 4-18,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270152223,4,创建订单,307,Temporary Redirect,订单服务测试组 4-18,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,1
+1749270152223,4,创建支付,307,Temporary Redirect,支付服务测试组 5-18,,true,,175,207,1,2,http://localhost:30080/api/payments,4,0,1
+1749270152227,4,创建订单,307,Temporary Redirect,订单服务测试组 4-18,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270152227,4,创建支付,307,Temporary Redirect,支付服务测试组 5-18,,true,,175,208,1,2,http://localhost:30080/api/payments,4,0,0
+1749270152231,3,创建支付,307,Temporary Redirect,支付服务测试组 5-18,,true,,175,208,1,1,http://localhost:30080/api/payments,3,0,0
+1749270152292,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-27,,true,,172,205,1,1,http://localhost:30080/api/carts,5,0,2
+1749270152297,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-27,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270152301,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-27,,true,,172,206,1,1,http://localhost:30080/api/carts,4,0,0
+1749270152305,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-27,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270152310,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-27,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152343,6,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,1
+1749270152346,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270152349,4,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270152350,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270152353,4,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270152354,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270152357,3,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/2,3,0,0
+1749270152358,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270152360,5,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270152362,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270152365,4,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270152366,3,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270152369,3,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/9,3,0,0
+1749270152369,3,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270152373,3,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/1,3,0,0
+1749270152373,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270152376,4,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,1
+1749270152377,4,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270152380,3,获取用户信息,200,OK,用户服务测试组 1-23,text,true,,206,155,1,2,http://localhost:30080/api/users/8,3,0,0
+1749270152381,3,获取商品信息,200,OK,商品服务测试组 2-23,text,true,,206,158,1,1,http://localhost:30080/api/products/7,3,0,1
+1749270152460,8,创建订单,307,Temporary Redirect,订单服务测试组 4-19,,true,,173,220,1,3,http://localhost:30080/api/orders,8,0,2
+1749270152461,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-28,,true,,172,205,1,3,http://localhost:30080/api/carts,7,0,1
+1749270152461,7,创建支付,307,Temporary Redirect,支付服务测试组 5-19,,true,,175,207,1,3,http://localhost:30080/api/payments,7,0,1
+1749270152468,6,创建支付,307,Temporary Redirect,支付服务测试组 5-19,,true,,175,208,1,3,http://localhost:30080/api/payments,6,0,1
+1749270152468,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-28,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,1
+1749270152468,6,创建订单,307,Temporary Redirect,订单服务测试组 4-19,,true,,173,221,1,3,http://localhost:30080/api/orders,6,0,1
+1749270152474,6,添加购物车,307,Temporary Redirect,购物车服务测试组 3-28,,true,,172,205,1,3,http://localhost:30080/api/carts,6,0,1
+1749270152474,6,创建支付,307,Temporary Redirect,支付服务测试组 5-19,,true,,175,207,1,3,http://localhost:30080/api/payments,6,0,1
+1749270152474,7,创建订单,307,Temporary Redirect,订单服务测试组 4-19,,true,,173,221,1,3,http://localhost:30080/api/orders,7,0,1
+1749270152480,5,添加购物车,307,Temporary Redirect,购物车服务测试组 3-28,,true,,172,207,1,3,http://localhost:30080/api/carts,5,0,1
+1749270152481,4,创建订单,307,Temporary Redirect,订单服务测试组 4-19,,true,,173,220,1,3,http://localhost:30080/api/orders,4,0,0
+1749270152480,5,创建支付,307,Temporary Redirect,支付服务测试组 5-19,,true,,175,207,1,3,http://localhost:30080/api/payments,5,0,1
+1749270152485,7,创建订单,307,Temporary Redirect,订单服务测试组 4-19,,true,,173,220,1,3,http://localhost:30080/api/orders,7,0,1
+1749270152485,7,添加购物车,307,Temporary Redirect,购物车服务测试组 3-28,,true,,172,205,1,3,http://localhost:30080/api/carts,7,0,1
+1749270152485,8,创建支付,307,Temporary Redirect,支付服务测试组 5-19,,true,,175,207,1,1,http://localhost:30080/api/payments,8,0,1
+1749270152543,7,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/8,7,0,1
+1749270152546,5,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,1
+1749270152550,4,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270152551,4,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270152554,5,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,1
+1749270152555,5,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270152560,6,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/3,6,0,0
+1749270152561,5,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,0
+1749270152566,6,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,156,1,2,http://localhost:30080/api/users/10,6,0,1
+1749270152566,6,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/8,6,0,1
+1749270152572,6,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270152572,6,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,156,1,2,http://localhost:30080/api/users/10,6,0,0
+1749270152578,7,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/9,7,0,0
+1749270152578,7,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/2,7,0,0
+1749270152585,5,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270152585,6,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270152590,6,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/9,6,0,1
+1749270152591,5,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270152596,4,获取商品信息,200,OK,商品服务测试组 2-24,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,1
+1749270152596,5,获取用户信息,200,OK,用户服务测试组 1-24,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270152631,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-29,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270152635,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-29,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,0
+1749270152639,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-29,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152642,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-29,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152645,4,添加购物车,307,Temporary Redirect,购物车服务测试组 3-29,,true,,172,205,1,1,http://localhost:30080/api/carts,4,0,1
+1749270152705,5,创建支付,307,Temporary Redirect,支付服务测试组 5-20,,true,,175,208,1,2,http://localhost:30080/api/payments,5,0,1
+1749270152705,5,创建订单,307,Temporary Redirect,订单服务测试组 4-20,,true,,173,220,1,2,http://localhost:30080/api/orders,5,0,1
+1749270152710,5,创建支付,307,Temporary Redirect,支付服务测试组 5-20,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,0
+1749270152710,6,创建订单,307,Temporary Redirect,订单服务测试组 4-20,,true,,173,220,1,2,http://localhost:30080/api/orders,6,0,0
+1749270152716,4,创建支付,307,Temporary Redirect,支付服务测试组 5-20,,true,,175,208,1,2,http://localhost:30080/api/payments,4,0,0
+1749270152716,4,创建订单,307,Temporary Redirect,订单服务测试组 4-20,,true,,173,221,1,2,http://localhost:30080/api/orders,4,0,0
+1749270152721,3,创建订单,307,Temporary Redirect,订单服务测试组 4-20,,true,,173,220,1,2,http://localhost:30080/api/orders,3,0,0
+1749270152720,5,创建支付,307,Temporary Redirect,支付服务测试组 5-20,,true,,175,207,1,2,http://localhost:30080/api/payments,5,0,1
+1749270152725,4,创建订单,307,Temporary Redirect,订单服务测试组 4-20,,true,,173,220,1,2,http://localhost:30080/api/orders,4,0,0
+1749270152726,3,创建支付,307,Temporary Redirect,支付服务测试组 5-20,,true,,175,207,1,1,http://localhost:30080/api/payments,3,0,0
+1749270152741,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,1
+1749270152745,4,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270152745,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,1
+1749270152749,5,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270152749,5,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,1
+1749270152754,3,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270152754,3,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,159,1,2,http://localhost:30080/api/products/10,3,0,0
+1749270152757,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270152757,4,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,1
+1749270152761,4,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,1
+1749270152761,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270152766,3,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,156,1,2,http://localhost:30080/api/users/10,3,0,0
+1749270152766,3,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/3,3,0,0
+1749270152769,4,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,1
+1749270152769,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,1
+1749270152773,4,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270152773,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270152777,4,获取用户信息,200,OK,用户服务测试组 1-25,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,1
+1749270152777,7,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,159,1,2,http://localhost:30080/api/products/10,7,0,1
+1749270152784,4,获取商品信息,200,OK,商品服务测试组 2-25,text,true,,206,159,1,1,http://localhost:30080/api/products/10,4,0,1
+1749270152793,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-30,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152796,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-30,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152799,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-30,,true,,172,205,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152802,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-30,,true,,172,207,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152805,3,添加购物车,307,Temporary Redirect,购物车服务测试组 3-30,,true,,172,206,1,1,http://localhost:30080/api/carts,3,0,0
+1749270152940,8,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/7,8,0,1
+1749270152945,6,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/2,6,0,1
+1749270152948,7,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/1,7,0,1
+1749270152951,5,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,0
+1749270152955,4,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270152956,4,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270152959,5,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,1
+1749270152960,4,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270152964,4,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270152964,5,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270152968,5,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,1
+1749270152969,4,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270152973,5,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270152973,5,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,0
+1749270152978,4,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270152978,4,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270152982,4,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270152982,4,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,1
+1749270152986,5,获取用户信息,200,OK,用户服务测试组 1-26,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270152986,5,获取商品信息,200,OK,商品服务测试组 2-26,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270153144,8,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/6,8,0,1
+1749270153147,6,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270153152,6,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/4,6,0,1
+1749270153153,5,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,0
+1749270153158,5,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270153158,5,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270153163,4,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270153163,4,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270153167,5,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270153167,5,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,0
+1749270153172,4,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270153172,4,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,1
+1749270153176,4,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270153177,4,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270153180,3,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270153181,4,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270153183,5,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,0
+1749270153185,5,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270153188,3,获取商品信息,200,OK,商品服务测试组 2-27,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270153190,3,获取用户信息,200,OK,用户服务测试组 1-27,text,true,,206,155,1,1,http://localhost:30080/api/users/6,3,0,0
+1749270153341,9,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/6,9,0,1
+1749270153345,6,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,1
+1749270153350,6,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,1
+1749270153351,6,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/4,6,0,0
+1749270153356,5,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270153357,5,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,0
+1749270153361,5,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270153363,3,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/4,3,0,0
+1749270153366,4,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270153366,5,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,1
+1749270153370,4,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270153371,4,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270153374,4,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270153375,5,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270153378,5,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270153380,4,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270153383,3,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,155,1,2,http://localhost:30080/api/users/6,3,0,0
+1749270153384,4,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270153386,4,获取用户信息,200,OK,用户服务测试组 1-28,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270153388,3,获取商品信息,200,OK,商品服务测试组 2-28,text,true,,206,158,1,1,http://localhost:30080/api/products/1,3,0,0
+1749270153541,14,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,156,1,2,http://localhost:30080/api/users/10,14,0,1
+1749270153545,10,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/3,10,0,1
+1749270153555,6,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/7,6,0,0
+1749270153555,6,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/9,6,0,0
+1749270153561,5,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,0
+1749270153561,5,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270153566,4,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270153566,4,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270153571,4,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270153570,5,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270153575,4,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270153575,5,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270153580,3,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/9,3,0,0
+1749270153580,4,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270153584,4,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270153584,4,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270153588,4,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270153588,5,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270153592,4,获取商品信息,200,OK,商品服务测试组 2-29,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270153593,4,获取用户信息,200,OK,用户服务测试组 1-29,text,true,,206,156,1,1,http://localhost:30080/api/users/10,4,0,0
+1749270153743,7,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,156,1,2,http://localhost:30080/api/users/10,7,0,1
+1749270153750,5,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270153750,6,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/3,6,0,1
+1749270153755,5,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,1
+1749270153756,5,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,1
+1749270153761,4,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270153760,5,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270153765,5,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,1
+1749270153765,5,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,1
+1749270153770,4,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270153770,4,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,1
+1749270153774,4,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270153775,3,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/4,3,0,0
+1749270153778,4,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270153778,4,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270153782,4,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270153782,4,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270153786,3,获取用户信息,200,OK,用户服务测试组 1-30,text,true,,206,155,1,2,http://localhost:30080/api/users/4,3,0,0
+1749270153786,3,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,2,http://localhost:30080/api/products/3,3,0,0
+1749270153789,4,获取商品信息,200,OK,商品服务测试组 2-30,text,true,,206,158,1,1,http://localhost:30080/api/products/4,4,0,1
+1749270153943,10,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/3,10,0,1
+1749270153946,8,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/8,8,0,0
+1749270153953,6,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/3,6,0,1
+1749270153954,6,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/6,6,0,0
+1749270153960,5,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,0
+1749270153960,5,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,1
+1749270153965,4,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270153965,5,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270153969,5,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,1
+1749270153970,4,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270153974,4,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270153975,4,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270153978,4,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270153979,3,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/1,3,0,0
+1749270153982,4,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270153982,4,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,1
+1749270153986,5,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270153986,10,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,156,1,2,http://localhost:30080/api/users/10,10,0,1
+1749270153991,9,获取商品信息,200,OK,商品服务测试组 2-31,text,true,,206,158,1,2,http://localhost:30080/api/products/8,9,0,0
+1749270153996,4,获取用户信息,200,OK,用户服务测试组 1-31,text,true,,206,155,1,1,http://localhost:30080/api/users/9,4,0,0
+1749270154144,10,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/7,10,0,1
+1749270154148,7,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/2,7,0,1
+1749270154155,6,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/7,6,0,0
+1749270154155,6,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/2,6,0,1
+1749270154161,5,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,0
+1749270154161,5,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270154166,5,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270154166,5,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270154171,4,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270154172,4,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270154175,4,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270154176,4,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270154179,5,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270154180,4,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270154184,4,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270154184,4,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270154188,4,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270154188,4,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,1
+1749270154192,4,获取商品信息,200,OK,商品服务测试组 2-32,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270154193,3,获取用户信息,200,OK,用户服务测试组 1-32,text,true,,206,155,1,1,http://localhost:30080/api/users/4,3,0,0
+1749270154344,9,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/8,9,0,1
+1749270154348,6,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270154353,6,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/7,6,0,1
+1749270154354,6,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/8,6,0,1
+1749270154359,5,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270154360,5,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270154364,5,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,0
+1749270154365,5,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270154369,4,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270154370,4,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270154373,5,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270154374,5,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,0
+1749270154378,4,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270154379,3,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/1,3,0,0
+1749270154382,3,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/9,3,0,0
+1749270154382,4,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270154385,4,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,1
+1749270154386,4,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,1
+1749270154389,5,获取用户信息,200,OK,用户服务测试组 1-33,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270154390,4,获取商品信息,200,OK,商品服务测试组 2-33,text,true,,206,158,1,1,http://localhost:30080/api/products/3,4,0,0
+1749270154543,8,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/2,8,0,1
+1749270154545,7,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/2,7,0,1
+1749270154552,5,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,0
+1749270154552,5,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270154557,5,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270154557,5,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270154562,5,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270154562,5,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270154567,4,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270154567,4,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270154571,4,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270154571,4,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270154575,4,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270154575,4,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,1
+1749270154579,4,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,1
+1749270154579,4,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270154583,4,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,1
+1749270154583,4,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,1
+1749270154587,4,获取商品信息,200,OK,商品服务测试组 2-34,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270154587,4,获取用户信息,200,OK,用户服务测试组 1-34,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270154741,10,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/4,10,0,1
+1749270154745,7,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/5,7,0,1
+1749270154751,6,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/5,6,0,1
+1749270154752,5,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270154757,5,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270154757,6,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/1,6,0,0
+1749270154762,5,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,1
+1749270154763,4,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270154767,4,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270154767,4,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270154771,5,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270154771,5,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,0
+1749270154777,4,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270154777,4,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270154781,4,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270154781,4,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270154785,5,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270154785,5,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270154790,4,获取用户信息,200,OK,用户服务测试组 1-35,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270154790,4,获取商品信息,200,OK,商品服务测试组 2-35,text,true,,206,158,1,1,http://localhost:30080/api/products/5,4,0,0
+1749270154943,12,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,156,1,2,http://localhost:30080/api/users/10,11,0,1
+1749270154946,9,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/7,9,0,1
+1749270154955,7,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,155,1,2,http://localhost:30080/api/users/2,7,0,1
+1749270154955,8,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/8,8,0,1
+1749270154963,6,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,156,1,2,http://localhost:30080/api/users/10,6,0,0
+1749270154963,6,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/9,6,0,0
+1749270154969,6,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,155,1,2,http://localhost:30080/api/users/8,6,0,0
+1749270154969,6,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,159,1,2,http://localhost:30080/api/products/10,6,0,0
+1749270154975,5,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,2
+1749270154975,6,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/2,6,0,2
+1749270154981,4,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270154981,5,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270154986,4,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270154986,4,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270154990,5,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,1
+1749270154990,5,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270154995,4,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,1
+1749270154995,4,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,1
+1749270154999,5,获取用户信息,200,OK,用户服务测试组 1-36,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270154999,5,获取商品信息,200,OK,商品服务测试组 2-36,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270155145,8,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/7,8,0,0
+1749270155147,6,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/8,6,0,0
+1749270155153,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270155153,6,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/1,6,0,1
+1749270155158,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,1
+1749270155159,5,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,1
+1749270155163,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270155164,5,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,1
+1749270155168,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270155169,5,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270155173,8,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/5,8,0,0
+1749270155174,7,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/4,7,0,1
+1749270155181,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270155181,5,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,1
+1749270155186,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270155187,4,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270155191,6,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/1,6,0,0
+1749270155191,6,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/7,6,0,0
+1749270155197,5,获取用户信息,200,OK,用户服务测试组 1-37,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,0
+1749270155197,5,获取商品信息,200,OK,商品服务测试组 2-37,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270155344,8,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/8,8,0,1
+1749270155347,5,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,1
+1749270155352,5,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,1
+1749270155353,5,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270155357,5,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/6,5,0,1
+1749270155358,5,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270155363,4,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270155363,4,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270155368,4,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270155368,4,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270155372,4,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270155373,3,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270155376,4,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,1
+1749270155376,4,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,1
+1749270155380,4,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,1
+1749270155380,5,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,1
+1749270155384,4,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,1
+1749270155385,4,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270155388,3,获取商品信息,200,OK,商品服务测试组 2-38,text,true,,206,158,1,2,http://localhost:30080/api/products/4,3,0,0
+1749270155389,3,获取用户信息,200,OK,用户服务测试组 1-38,text,true,,206,155,1,1,http://localhost:30080/api/users/9,3,0,0
+1749270155543,13,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/8,13,0,1
+1749270155546,10,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/3,10,0,1
+1749270155557,6,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,0
+1749270155557,6,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/4,6,0,0
+1749270155563,5,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270155563,5,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,1
+1749270155568,4,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270155568,4,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270155572,4,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270155572,5,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,1
+1749270155576,4,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270155577,4,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270155580,3,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270155581,3,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/4,3,0,0
+1749270155584,4,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270155585,3,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270155588,3,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,158,1,2,http://localhost:30080/api/products/1,3,0,0
+1749270155588,3,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/8,3,0,0
+1749270155592,3,获取用户信息,200,OK,用户服务测试组 1-39,text,true,,206,155,1,2,http://localhost:30080/api/users/4,3,0,0
+1749270155592,3,获取商品信息,200,OK,商品服务测试组 2-39,text,true,,206,159,1,2,http://localhost:30080/api/products/10,3,0,0
+1749270155745,11,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/1,11,0,0
+1749270155743,13,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/5,13,0,1
+1749270155757,7,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/7,7,0,1
+1749270155757,7,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/7,7,0,1
+1749270155764,6,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/9,6,0,1
+1749270155764,6,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/7,6,0,1
+1749270155770,5,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270155770,7,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/8,7,0,0
+1749270155775,4,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270155777,6,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/1,6,0,0
+1749270155779,5,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,0
+1749270155783,4,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270155784,4,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270155787,4,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270155788,3,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,156,1,2,http://localhost:30080/api/users/10,3,0,0
+1749270155791,4,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,1
+1749270155791,4,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270155796,4,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270155796,4,获取用户信息,200,OK,用户服务测试组 1-40,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270155800,3,获取商品信息,200,OK,商品服务测试组 2-40,text,true,,206,158,1,1,http://localhost:30080/api/products/9,3,0,0
+1749270155938,8,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,155,1,2,http://localhost:30080/api/users/4,8,0,1
+1749270155947,6,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,155,1,2,http://localhost:30080/api/users/1,6,0,0
+1749270155947,7,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/8,7,0,0
+1749270155954,5,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270155954,5,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270155959,5,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270155959,5,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,1
+1749270155964,4,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270155964,5,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,0
+1749270155968,4,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270155969,4,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270155972,3,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,155,1,2,http://localhost:30080/api/users/8,3,0,0
+1749270155973,5,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270155975,4,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,1
+1749270155978,4,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270155979,4,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270155982,3,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270155983,4,获取用户信息,200,OK,用户服务测试组 1-41,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270155985,4,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,1,http://localhost:30080/api/products/5,4,0,0
+1749270155989,3,获取商品信息,200,OK,商品服务测试组 2-41,text,true,,206,158,1,1,http://localhost:30080/api/products/1,3,0,0
+1749270156143,9,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,156,1,2,http://localhost:30080/api/users/10,9,0,1
+1749270156145,8,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/6,8,0,1
+1749270156153,5,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270156152,6,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/4,6,0,1
+1749270156158,5,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,1
+1749270156158,5,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270156163,5,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270156164,4,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270156168,4,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270156168,4,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270156172,4,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,1
+1749270156172,4,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,1
+1749270156176,5,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,1
+1749270156176,5,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,1
+1749270156181,4,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270156181,4,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270156185,4,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270156185,5,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270156189,4,获取商品信息,200,OK,商品服务测试组 2-42,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270156190,3,获取用户信息,200,OK,用户服务测试组 1-42,text,true,,206,155,1,1,http://localhost:30080/api/users/2,3,0,0
+1749270156342,9,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/3,9,0,1
+1749270156344,7,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/8,7,0,1
+1749270156351,5,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270156352,5,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270156357,5,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270156357,5,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270156362,4,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270156362,5,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,1
+1749270156367,5,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/8,5,0,0
+1749270156366,7,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/8,7,0,1
+1749270156373,4,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270156372,5,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,1
+1749270156377,4,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270156377,4,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270156381,4,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270156381,4,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270156385,4,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270156385,4,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270156389,4,获取商品信息,200,OK,商品服务测试组 2-43,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270156389,4,获取用户信息,200,OK,用户服务测试组 1-43,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270156543,8,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/2,8,0,0
+1749270156546,6,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,0
+1749270156551,6,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,0
+1749270156552,7,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/4,7,0,1
+1749270156557,6,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/3,6,0,0
+1749270156559,5,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270156563,4,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270156564,4,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270156567,5,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,1
+1749270156568,5,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270156572,4,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270156573,3,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/7,3,0,0
+1749270156576,4,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270156577,4,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270156580,4,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270156581,4,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270156584,4,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270156585,3,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/8,3,0,0
+1749270156588,3,获取用户信息,200,OK,用户服务测试组 1-44,text,true,,206,155,1,2,http://localhost:30080/api/users/5,3,0,0
+1749270156588,4,获取商品信息,200,OK,商品服务测试组 2-44,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,1
+1749270156740,8,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/2,7,0,1
+1749270156746,5,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270156748,4,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270156752,4,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270156752,4,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/3,4,0,0
+1749270156756,5,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270156757,4,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270156761,4,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270156761,6,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/2,6,0,0
+1749270156765,4,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,1
+1749270156767,4,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270156769,3,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/3,3,0,0
+1749270156771,3,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270156772,4,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/2,4,0,0
+1749270156774,3,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270156776,4,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/6,3,0,0
+1749270156777,3,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270156780,3,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,2,http://localhost:30080/api/products/3,3,0,0
+1749270156780,3,获取用户信息,200,OK,用户服务测试组 1-45,text,true,,206,155,1,2,http://localhost:30080/api/users/8,3,0,0
+1749270156783,3,获取商品信息,200,OK,商品服务测试组 2-45,text,true,,206,158,1,1,http://localhost:30080/api/products/6,3,0,0
+1749270156939,9,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/9,9,0,0
+1749270156944,5,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270156948,5,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270156949,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270156953,4,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270156953,5,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/6,5,0,0
+1749270156957,5,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,1
+1749270156958,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270156962,4,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/2,4,0,0
+1749270156962,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/1,4,0,0
+1749270156966,4,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270156966,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,1
+1749270156970,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270156970,4,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,0
+1749270156974,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/5,4,0,0
+1749270156974,4,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270156978,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270156978,4,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270156982,4,获取商品信息,200,OK,商品服务测试组 2-46,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270156983,3,获取用户信息,200,OK,用户服务测试组 1-46,text,true,,206,155,1,1,http://localhost:30080/api/users/7,3,0,0
+1749270157139,9,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/5,9,0,1
+1749270157148,7,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/5,7,0,0
+1749270157148,7,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/5,7,0,0
+1749270157155,6,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/6,6,0,1
+1749270157155,6,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/5,6,0,1
+1749270157161,5,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,0
+1749270157161,5,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/7,5,0,0
+1749270157166,4,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/8,4,0,0
+1749270157166,4,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/8,4,0,0
+1749270157170,4,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,1
+1749270157170,4,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/6,4,0,1
+1749270157175,4,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/5,4,0,0
+1749270157175,4,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/6,4,0,0
+1749270157179,4,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270157179,4,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/9,4,0,0
+1749270157183,3,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/4,3,0,0
+1749270157183,4,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270157187,5,获取用户信息,200,OK,用户服务测试组 1-47,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,0
+1749270157187,5,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,2,http://localhost:30080/api/products/5,5,0,0
+1749270157192,3,获取商品信息,200,OK,商品服务测试组 2-47,text,true,,206,158,1,1,http://localhost:30080/api/products/8,3,0,0
+1749270157342,8,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/1,8,0,0
+1749270157345,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270157350,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,0
+1749270157350,6,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/2,6,0,0
+1749270157356,5,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,0
+1749270157355,6,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,158,1,2,http://localhost:30080/api/products/8,6,0,1
+1749270157361,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270157361,5,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270157366,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,159,1,2,http://localhost:30080/api/products/10,5,0,0
+1749270157366,5,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,0
+1749270157371,4,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,159,1,2,http://localhost:30080/api/products/10,4,0,0
+1749270157371,5,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270157376,4,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270157375,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270157380,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,158,1,2,http://localhost:30080/api/products/1,5,0,1
+1749270157380,5,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/5,5,0,1
+1749270157385,5,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270157385,5,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,0
+1749270157391,4,获取商品信息,200,OK,商品服务测试组 2-48,text,true,,206,158,1,2,http://localhost:30080/api/products/7,4,0,0
+1749270157391,4,获取用户信息,200,OK,用户服务测试组 1-48,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270157539,9,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/6,9,0,0
+1749270157546,6,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/1,6,0,0
+1749270157548,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/1,5,0,0
+1749270157552,5,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270157553,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/2,5,0,0
+1749270157557,6,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/3,6,0,1
+1749270157558,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/8,5,0,1
+1749270157563,5,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,0
+1749270157563,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/3,5,0,0
+1749270157568,5,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/2,5,0,0
+1749270157568,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/7,5,0,0
+1749270157573,4,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270157573,5,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/9,5,0,0
+1749270157577,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/9,5,0,1
+1749270157578,4,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270157582,5,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/3,5,0,1
+1749270157582,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,1
+1749270157587,4,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,2,http://localhost:30080/api/products/6,3,0,0
+1749270157587,5,获取用户信息,200,OK,用户服务测试组 1-49,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,1
+1749270157591,3,获取商品信息,200,OK,商品服务测试组 2-49,text,true,,206,158,1,1,http://localhost:30080/api/products/8,3,0,0
+1749270157743,11,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/3,11,0,0
+1749270157746,9,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/3,9,0,1
+1749270157754,6,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/8,6,0,1
+1749270157755,7,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/2,7,0,1
+1749270157761,5,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/4,5,0,0
+1749270157762,5,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/4,5,0,0
+1749270157766,5,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,156,1,2,http://localhost:30080/api/users/10,5,0,0
+1749270157767,4,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/9,4,0,0
+1749270157771,4,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/4,4,0,0
+1749270157771,4,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/3,4,0,0
+1749270157775,4,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,156,1,2,http://localhost:30080/api/users/10,4,0,0
+1749270157776,3,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/9,3,0,0
+1749270157779,4,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/1,4,0,0
+1749270157780,4,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/9,3,0,0
+1749270157783,4,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/7,4,0,0
+1749270157784,4,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/4,4,0,0
+1749270157787,3,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,155,1,2,http://localhost:30080/api/users/3,3,0,0
+1749270157788,3,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,2,http://localhost:30080/api/products/2,3,0,0
+1749270157791,3,获取用户信息,200,OK,用户服务测试组 1-50,text,true,,206,156,1,2,http://localhost:30080/api/users/10,3,0,0
+1749270157791,4,获取商品信息,200,OK,商品服务测试组 2-50,text,true,,206,158,1,1,http://localhost:30080/api/products/8,4,0,1
